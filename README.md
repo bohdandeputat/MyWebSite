@@ -10,4 +10,4 @@
 - [#01 - Базовий HTML-шаблон](https://github.com/bohdandeputat/MyWebSite/tree/HTML.01-Basic-HTML-Template)
 - [#02 - Семантичні елементи HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.02-Semantic-Elements)
 - [#03 - Заголовки та абзаци HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.03-Headings-and-Paragraphs)
-- [#04 - Стилі HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.03-HTML-Styles)
+- [#04 - Стилі HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.04-HTML-Styles)
