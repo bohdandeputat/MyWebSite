@@ -12,3 +12,4 @@
 - [#03 - Заголовки та абзаци HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.03-Headings-and-Paragraphs)
 - [#04 - Стилі HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.04-HTML-Styles)
 - [#05 - Форматування тексту HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.05-Text-Formatting)
+- [#06 - Цитування та посилання HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.06-Quotation-and-Links)
