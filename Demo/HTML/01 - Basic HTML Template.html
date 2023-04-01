@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8" />
+
+    <!-- SEO -->
+    <meta name="description" content="HTML Basics" />
+    <meta name="keywords" content="html, webdesign" />
+    <meta name="author" content="Bohdan Deputat" />
+    <meta name="robots" content="index, nofollow" />
+
+    <!-- For mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Document Favicon in browser tabs -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+
+    <!-- Document title in browser tabs -->
+    <title>Вступ до HTML</title>
+
+    <!-- Local styles -->
+    <style>
+      div,
+      span {
+        border: 1px solid black;
+      }
+
+      #myHeader {
+        background-color: lightblue;
+        color: black;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .city {
+        background-color: tomato;
+        color: white;
+        padding: 3px;
+      }
+
+      .note {
+        font-size: 120%;
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--HTML Block and Inline Elements-->
+
+    <!--
+      Block-level Elements
+      A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+      A block-level element always takes up the full width available
+    -->
+    <div>Simple Block-level Element - Hello World</div>
+
+    <!--
+      Inline Elements
+      An inline element does not start on a new line.
+      An inline element only takes up as much width as necessary.
+    -->
+    <span>Simple Inline Element - Hello World</span>
+
+    <!--
+      HTML id Attribute
+      The HTML id attribute is used to specify a unique id for an HTML element.
+      You cannot have more than one element with the same id in an HTML document.
+
+      HTML class Attribute
+      The HTML class attribute is used to specify a class for an HTML element.
+      Multiple HTML elements can share the same class.
+    -->
+
+    <!-- An element with a unique id -->
+    <h1 id="myHeader">My Cities</h1>
+
+    <!-- Multiple elements with same class -->
+    <div class="city">
+      <h2>London</h2>
+      <p>London is the capital of England.</p>
+    </div>
+
+    <div class="city">
+      <h2>Paris</h2>
+      <p>Paris is the capital of <span class="note">France</span>.</p>
+    </div>
+    
+  </body>
+</html>
