@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до HTML</title>
+
+  <style>
+    html {
+      padding: 0;
+    }
+
+    body {
+      margin: 5;
+      padding: 0;
+      display: grid;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+    }
+
+    header,
+    footer {
+      grid-column: 1 / 4;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+
+    main {
+      grid-column: 1 / 3;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+
+    section,
+
+    article,
+
+    nav {
+      margin: 5px;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади HTML</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- Independent block -->
+    <section>
+      <h2 id="C1">HTML цитування</h2>
+
+      <!--HTML Quotation and Citation Elements-->
+      <article>
+        <h3>Елементи цитування в HTML</h3>
+        <p>У цьому розділі ми пройдемо blockquote, q, abbr, address, cite, і bdoHTML - елементів.</p>
+
+        <pre>Опис тегу:
+          abbr -  Визначає абревіатуру 
+          address -  Визначає контактну інформацію для автора / власника документа
+          q -  Визначає короткий рядок
+          blockquote -  Визначає розділ, який цитується з іншого джерела
+          bdo -  Визначає напрямок тексту
+        </pre>
+
+        <p>Приклади:</p>
+
+        <!-- Information about author -->
+        <article>
+          <p>Тег <code>&lt;address&gt;</code> визначає контактну інформацію автора. <br>
+            Цей елемент використовується для позначення контактних даних автора або власника документа, щоб читач міг
+            використовувати ці дані для зв’язку з власником документа. Елемент
+            <code>&lt;address&gt;</code> часто з’являється на початку або в кінці документа.
+          </p>
+          <p>Here is my HTML basics course, which was created on 2020.</p>
+          <address>by Bohdan Deputat</address>
+        </article>
+
+        <!-- Quote, abbr -->
+        <article>
+
+          <p>
+            Тег <code>&lt;q&gt;</code> визначає коротку вбудовану цитату.
+          </p>
+          <p>
+            Тег <code>&lt;abbr&gt;</code> визначає скорочену форму довшого слова або фрази.
+          </p>
+          <q>Hello, welcome to <abbr title="HyperText Markup Language">"HTML"</abbr> channel</q>
+          <address>Information about author:Bohdan Deputat</address>
+        </article>
+
+        <!-- Block of Quote -->
+        <article>
+          <p>Тег <code>&lt;blockquote&gt;</code> вказує на те, що вкладений текст є розширеною цитатою.</p>
+
+          <blockquote>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took
+              a galley of type.
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+              essentially unchanged.
+            </p>
+          </blockquote>
+        </article>
+
+        <!-- HTML <bdo> Tag -->
+        <article>
+          <p>
+            Тег <code>&lt;bdo&gt;</code> (скорочення від bidirectional override) використовується для зміни поточного
+            напрямку тексту.<br>
+
+            Ви повинні вказати <code>dir</code> атрибут для цього елемента. Цей обов’язковий атрибут визначає основний
+            напрямок
+            текстового вмісту елемента.
+            Значенням <code>ltr</code>, щоб вказати перевизначення зліва направо, і <code>rtl</code>, щоб указати
+            перевизначення справа наліво.
+
+          </p>
+          <p>The sequence "1-2-3-4-5" was reversed as: <bdo dir="rtl">1-2-3-4-5</bdo></p>
+        </article>
+    </section>
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>
