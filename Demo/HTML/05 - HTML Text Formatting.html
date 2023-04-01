@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8" />
+
+    <!-- SEO -->
+    <meta name="description" content="HTML Basics" />
+    <meta name="keywords" content="html, webdesign" />
+    <meta name="author" content="Bohdan Deputat" />
+    <meta name="robots" content="index, nofollow" />
+
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- For mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Document Favicon in browser tabs -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+
+    <!-- Document title in browser tabs -->
+    <title>Вступ до HTML</title>
+
+    <style>
+      html {
+        padding: 0;
+      }
+
+      body {
+        margin: 5;
+        padding: 0;
+        display: grid;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+      }
+
+      header,
+      footer {
+        grid-column: 1 / 4;
+        border: 1px dashed #000;
+        padding: 5px;
+      }
+
+      main {
+        grid-column: 1 / 3;
+        border: 1px dashed #000;
+        padding: 5px;
+      }
+
+      section,
+      article,
+      nav {
+        margin: 5px;
+        border: 1px dashed #000;
+        padding: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Основні приклади HTML</h1>
+
+      <!-- Main navigation -->
+
+      <nav>Навігація</nav>
+    </header>
+
+    <!-- Main part of site -->
+    <main>
+      <!-- Independent block -->
+
+      <section>
+        <!-- HTML Text Formatting -->
+        <h2>Форматування тексту HTML</h2>
+        <p>
+          HTML містить кілька елементів для визначення тексту зі спеціальним
+          значенням.
+        </p>
+        <p>
+          Елементи форматування були розроблені для відображення спеціальних
+          типів тексту:
+        </p>
+        <pre>
+            b - Жирний текст;
+            strong - Важливий текст;
+            i - Курсивний текст;
+            em - Підкреслений текст;
+            mark - Позначений текст;
+            small - Менший текст;
+            del - Видалений текст;
+            ins - Вставлений текст;
+            sub - Підрядковий текст;
+            sup - Надрядковий текст;
+      </pre
+        >
+
+        <article>
+          <!--HTML <b> and <strong> Elements-->
+          <h3>HTML &lt;b&gt; та &lt;strong&gt; Елементи:</h3>
+          <p>
+            Елемент HTML &lt;b&gt; визначає жирний текст без особливого
+            значення.
+          </p>
+          <p>
+            Елемент HTML &lt;strong&gt; визначає текст із великим значенням.
+            Вміст усередині зазвичай відображається жирним шрифтом.
+          </p>
+          <p>Приклад:</p>
+          <p><b> Цей текст виділений жирним шрифтом </b></p>
+          <p><strong> Цей текст важливий! </strong></p>
+        </article>
+
+        <article>
+          <!--HTML <i> and <em> Elements-->
+          <h3>HTML &lt;i&gt; та &lt;em&gt; Елементи:</h3>
+          <p>
+            Елемент HTML &lt;i&gt; визначає частину тексту альтернативним
+            голосом або настроєм. Вміст усередині відображається курсивом.<br />
+            Тег часто використовується для позначення технічного терміна, фрази
+            з іншої мови, думки, назви судна тощо./p>
+          </p>
+
+          <p>
+            Елемент HTML &lt;em&gt; ввизначає наголошений текст. Вміст усередині
+            відображається курсивом.<br />
+            Читач з екрану вимовлятиме слова &lt;em&gt; з наголосом,
+            використовуючи словесний наголос.
+          </p>
+          <p>Приклад:</p>
+          <p><i> Цей текст курсивом </i></p>
+          <p><em> Цей текст наголошено </em></p>
+        </article>
+
+        <article>
+          <!--HTML <small> and <mark> Elements-->
+          <h3>
+            HTML &lt;small&gt;, &lt;mark&gt;, &lt;del&gt;, &lt;ins&gt; Елементи:
+          </h3>
+          <p>Елемент HTML &lt;small&gt; визначає менший текст./p></p>
+          <p>
+            Елемент HTML &lt;mark&gt; визначає текст, який слід позначити або
+            виділити.
+          </p>
+          <p>
+            Елемент HTML &lt;del&gt; визначає текст, який було видалено з
+            документа. Зазвичай браузери наносять рядок через видалений текст.
+          </p>
+          <p>
+            Елемент HTML &lt;ins&gt; визначає текст, який було вставлено в
+            документ. Зазвичай браузери підкреслюють вставлений текст
+          </p>
+          <p>Приклад:</p>
+          <p>Це трохи <small> менший </small> текст.</p>
+          <p>Не забудьте придбати <mark> молоко </mark> сьогодні.</p>
+          <p>Мій улюблений колір - <del> синій </del> <ins>червоний</ins>.</p>
+        </article>
+
+
+        
+      </section>
+
+      <section>
+        <article></article>
+      </section>
+    </main>
+
+    <!-- Aditional information -->
+    <aside></aside>
+
+    <!-- Footer -->
+    <footer></footer>
+  </body>
+</html>
