@@ -187,7 +187,82 @@
         </p>
       </article>
 
+      <!--HTML Input Type - Checkboxes-->
+      <article>
+        <h3>Незалежні перемикачі &lt;checkbox&gt;:</h3>
+        <code>&lt;input type="checkbox"&gt;</code>
+        <p>
+          Визначає <strong>прапорець</strong>.<br>
+          Прапорці дозволяють користувачеві вибрати НУЛЬ або БІЛЬШЕ варіантів з обмеженою кількістю варіантів.
+        </p>
+        <p>Приклад:</p>
+        <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> У мене є велосипед</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" checked>
+          <label for="vehicle2"> У мене є машина</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> У мене є човен</label><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        </p>
+      </article>
 
+      <!--HTML Input Type - Radio-->
+      <article>
+        <h3>Залежні перемикачі &lt;radio&gt;:</h3>
+        <code>&lt;input type="radio"&gt;</code>
+        <p> Визначає <strong>Кнопки радіо</strong>.<br>
+          Перемикачі дозволяють користувачеві вибрати ОДИН із обмеженої кількості варіантів.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <input type="radio" name="gender" value="male" id="male">
+          <label for="male">Чоловік</label><br>
+          <input type="radio" name="gender" value="female" id="female">
+          <label for="female">Жінка</label>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - File Select box-->
+      <article>
+        <h3>Поле вибору файлу:</h3>
+        <code>&lt;input type="file"&gt;</code>
+        <p> Визначає <strong>Кнопку Browse...</strong>.<br>
+        <p>
+          Поля файлів дозволяють користувачеві переглядати локальний файл та надсилати його як вкладення з
+          даними форми.<br>
+          Веб-браузери, такі як Google Chrome та Firefox, відображають поле введення файлу за допомогою кнопки
+          "Огляд" (Browse), що дозволяє користувачеві переміщатися по локальному жорсткому диску та вибирати
+          файл.<br>
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <form>
+            <label for="file-select">Upload:</label>
+            <input type="file" name="upload" id="file-select">
+          </form>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Textarea-->
+      <article>
+        <h3>Багаторядкове текстове поле (textarea):</h3>
+        <code>&lt;textarea&gt;</code>
+        <p>
+          Textarea - це багаторядковий елемент введення тексту, який дозволяє користувачеві вводити більше
+          одного рядка
+          тексту.<br>
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <label for="message">Текст повідомлення:</label><br>
+          <textarea rows="3" cols="30" name="message" id="message">Текст за замовчуванням</textarea>
+        </form>
+        </p>
+      </article>
     </section>
 
 
