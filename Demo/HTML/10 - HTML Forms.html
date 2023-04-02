@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до HTML</title>
+
+  <style>
+    html {
+      padding: 0;
+    }
+
+    body {
+      margin: 5;
+      padding: 0;
+      display: grid;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+    }
+
+    header,
+    footer {
+      grid-column: 1 / 4;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+
+    main {
+      grid-column: 1 / 3;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+
+    section,
+
+    article,
+
+    nav {
+      margin: 5px;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади HTML</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- Independent block -->
+
+    <!-- HTML What is HTML Form -->
+    <section>
+      <h2>Що таке форма HTML?</h2>
+      <p>Форми – важливий елемент багатьох веб-сторінок, оскільки з їх допомогою можна отримати дані, введені
+        користувачами і обробити їх. Форми надають нам значну кількість елементів управління і полів, в які користувач
+        може ввести пошуковий запит, або свій логін і пароль, або заповнити форму для прийому на роботу.</p>
+
+      <!-- HTML Forms -->
+      <article>
+        <h3>Форма HTML</h3>
+        <p>Форма HTML використовується для збору вводу користувача. Введення даних користувача найчастіше надсилається
+          на сервер для обробки.
+        </p>
+        <p>Тег <code>&lt;form&gt;</code> використовується для створення HTML-форми.</p>
+        <q><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">MND: The Form
+            element</a></q>
+        <p>Приклад:</p>
+        <!-- HTML Forms -->
+        <p> Для отримання та обробки даних форм використовуються мови веб-програмування, такі як PHP, Node.js. </p>
+        <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="Bohdan"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Deputat"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        <p>Форми містять спеціальні елементи, які називаються елементами управління, такими як поле введення, прапорці,
+          перемикачі, кнопки надсилання тощо. Користувачі зазвичай заповнюють форму, змінюючи її елементи керування,
+          наприклад введення тексту, вибір елементів тощо та надсилання цієї форми на веб-сервер для подальшої обробки.
+        </p>
+      </article>
+
+      <!--The <label> Element-->
+      <article>
+        <h3>Елемент <code>&lt;label&gt;</code></h3>
+        <p>Зверніть увагу на використання <code>&lt;label&gt;</code> елемента у прикладі вище.<br>
+          <code>&lt;label&gt;</code> Тег визначає мітку для багатьох елементів форми. <br>
+          <code>&lt;label&gt;</code> Елемент корисний для користувачів читання з екрану, тому що екран-читач буде читати
+          вголос
+          етикетку , коли фокус користувача на вхідному елементі. <br>
+          <code>&lt;label&gt;</code> Елемент також допомагає користувачам , які мають труднощі з клацати на дуже
+          невеликих ділянках
+          (наприклад, радиокнопки і прапорці) - тому що , коли користувач натискає на текст всередині
+          <code>&lt;label&gt;</code>
+          елемента, він перемикає кнопки радіо / прапорець.
+        </p>
+      </article>
+    </section>
+
+    <!-- HTML Input Types -->
+    <section>
+      <h2>Елементи введення</h2>
+      <p>Input Element - Це найбільш часто використовуваний елемент у формах HTML. <br>
+        Дозволяє вказати різні типи полів введення користувачем залежно від атрибута type. Елемент введення може мати
+        текстове поле типу, поле пароля, прапорець, перемикач, кнопку надсилання, кнопку скидання, поле вибору файлу,
+        а також кілька нових типів введення, представлені в HTML5.</p>
+      <p>Тег &lt;input&gt; може відображатися різними способами, в залежності від type атрибута:</p>
+      <dl>
+        <dt>
+          <code>&lt;input type = "text"&gt;</code>
+        </dt>
+        <dd> Відображає однорядкове поле введення тексту </dd>
+        <dt>
+          <code>&lt;input type = "radio"&gt;</code>
+        </dt>
+        <dd> Відображає перемикач (для вибору одного з багатьох варіантів) </dd>
+        <dt>
+          <code>&lt;input type = "checkbox"&gt;</code>
+        </dt>
+        <dd> Відображає прапорець (для вибору нуля або більше з багатьох варіантів) </dd>
+        <dt>
+          <code>&lt;input type = "submit"&gt;</code>
+        </dt>
+        <dd> Відображає кнопку подання (для подання форми) </dd>
+        <dt>
+          <code>&lt;input type = "button"&gt;</code>
+        </dt>
+        <dd> Відображає кнопку, на яку можна натиснути </dd>
+      </dl>
+      <q><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input" target="_blank">MDN: The Input (Form
+          Input) element</a></q>
+
+      <!--Text Fields-->
+      <article>
+        <h3>Текстові поля</h3>
+        <code>&lt;input type = "text"&gt;</code>
+        <p>Визначає поле введення одного рядка для введення тексту.</p>
+        <p>Приклад:</p>
+        <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname">
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Password Field-->
+      <article>
+        <h3>Поле пароля</h3>
+        <code>&lt;input type = "password"&gt;</code>
+        <p>Поля пароля подібні до текстових. Різниця лише в тому; символи в полі пароля маскуються, тобто вони
+          відображаються як зірочки або крапки. Це робиться для того, щоб хтось інший не читав пароль на екрані.</p>
+        <p>Приклад:</p>
+        <form>
+          <label for="user-pwd">Password:</label>
+          <input type="password" name="user-password" id="user-pwd">
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Checkboxes-->
+      <article>
+        <h3>Незалежні перемикачі &lt;checkbox&gt;:</h3>
+        <code>&lt;input type="checkbox"&gt;</code>
+        <p>
+          Визначає <strong>прапорець</strong>.<br>
+          Прапорці дозволяють користувачеві вибрати НУЛЬ або БІЛЬШЕ варіантів з обмеженою кількістю варіантів.
+        </p>
+        <p>Приклад:</p>
+        <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> У мене є велосипед</label><br>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" checked>
+          <label for="vehicle2"> У мене є машина</label><br>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+          <label for="vehicle3"> У мене є човен</label><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Radio-->
+      <article>
+        <h3>Залежні перемикачі &lt;radio&gt;:</h3>
+        <code>&lt;input type="radio"&gt;</code>
+        <p> Визначає <strong>Кнопки радіо</strong>.<br>
+          Перемикачі дозволяють користувачеві вибрати ОДИН із обмеженої кількості варіантів.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <input type="radio" name="gender" value="male" id="male">
+          <label for="male">Чоловік</label><br>
+          <input type="radio" name="gender" value="female" id="female">
+          <label for="female">Жінка</label>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - File Select box-->
+      <article>
+        <h3>Поле вибору файлу:</h3>
+        <code>&lt;input type="file"&gt;</code>
+        <p> Визначає <strong>Кнопку Browse...</strong>.<br>
+        <p>
+          Поля файлів дозволяють користувачеві переглядати локальний файл та надсилати його як вкладення з
+          даними форми.<br>
+          Веб-браузери, такі як Google Chrome та Firefox, відображають поле введення файлу за допомогою кнопки
+          "Огляд" (Browse), що дозволяє користувачеві переміщатися по локальному жорсткому диску та вибирати
+          файл.<br>
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <form>
+            <label for="file-select">Upload:</label>
+            <input type="file" name="upload" id="file-select">
+          </form>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Textarea-->
+      <article>
+        <h3>Багаторядкове текстове поле (textarea):</h3>
+        <code>&lt;textarea&gt;</code>
+        <p>
+          Textarea - це багаторядковий елемент введення тексту, який дозволяє користувачеві вводити більше
+          одного рядка
+          тексту.<br>
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <label for="message">Текст повідомлення:</label><br>
+          <textarea rows="3" cols="30" name="message" id="message">Текст за замовчуванням</textarea>
+        </form>
+        </p>
+      </article>
+    </section>
+
+    <!--HTML Input Type - Select Single Boxes and Multiple Boxes. Submit and Reset Buttons-->
+    <section>
+      <h2>Список із єдиним вибором та множинним вибором. Кнопки "Надіслати" та "Скинути"</h2>
+
+      <!--HTML Input Type - Select Single Boxes-->
+      <article>
+        <h3>Список з єдиним вибором:</h3>
+        <code>&lt;select&gt;</code>
+        <p>
+          Поле вибору - це випадаючий список опцій, що дозволяє користувачеві вибрати один варіант зі спадного
+          списку параметрів. <br>
+          Поле вибору створюється за допомогою елементів <code>&lt;select&gt;</code> та
+          <code>&lt;option&gt;</code> . <br>
+          Елементи <code>&lt;option&gt;</code> в елементі <code>&lt;select&gt;</code> визначають кожен елемент
+          списку.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <select name=day_s size=1>
+            <option value=1> понеділок </option>
+            <option value=2> вівторок </option>
+            <option value=3 selected> середа </option>
+            <option value=4> четвер </option>
+            <option value=5> п'ятниця </option>
+            <option value=6> субота </option>
+            <option value=7> неділя </option>
+          </select>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Select Multiple Boxes-->
+      <article>
+        <h3>Список із множинним вибором (multiple):</h3>
+        <code>&lt;select multiple&gt;</code>
+        <p>
+          Поле вибору - це випадаючий список опцій, що дозволяє користувачеві вибрати кілька варіантів зі
+          списку параметрів. <br>
+          Поле вибору створюється за допомогою елементів <code>&lt;select&gt;</code> та
+          <code>&lt;option&gt;</code> . <br>
+          Елементи <code>&lt;option&gt;</code> в елементі <code>&lt;select&gt;</code> визначають кожен елемент
+          списку.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <select name=day_m[] size=7 multiple>
+            <option value=1 selected> понеділок </option>
+            <option value=2> вівторок </option>
+            <option value=3> середа </option>
+            <option value=4> четвер </option>
+            <option value=5> п'ятниця </option>
+            <option value=6> субота </option>
+            <option value=7> неділя </option>
+          </select>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Submit and Reset Buttons-->
+      <article>
+        <h3>Кнопки надсилання та скидання:</h3>
+        <code>&lt;input type="submit"&gt;</code> <br>
+        <code>&lt;input type="reset"&gt;</code>
+        <p>
+          <code>submit</code> - Кнопка "Надіслати" використовується для надсилання даних форми на веб-сервер.
+          <br>
+          Після натискання кнопки "Надіслати" дані форми надсилаються до файлу, зазначеного в атрибуті дії
+          форми, для обробки
+          поданих
+          даних.
+        </p>
+        <p><code>reset</code> - Кнопка "Cкинути" скидає всі форми управління до значень за замовчуванням. <br>
+          Спробуйте наступний приклад, ввівши своє ім’я в текстовому полі та натисніть кнопку «Відправити»,
+          щоб побачити його в дії.</p>
+        </p>
+        <p>Приклад:</p>
+        <form action="https://www.tutorialrepublic.com/examples/html/action.php" method="post" target="_blank">
+          <label for="first-name">First Name:</label>
+          <input type="text" name="first-name" id="first-name">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
+        </p>
+      </article>
+    </section>
+
+    <!--HTML Form - Form Controls-->
+    <section>
+      <h2>Керування формою</h2>
+
+      <!--HTML Form - The form method Attribute-->
+      <article>
+        <h3>Атрибут formmethod:</h3>
+        <p>Вхідний formmethod атрибут визначає метод HTTP для надсилання даних форми на URL-адресу дії.</p>
+        <p>Дані форми можуть бути надіслані як змінні URL-адреси (method = "get") або як транзакція повідомлення
+          HTTP
+          (method = "post").</p>
+        <dl>
+          <dt>
+            Примітки щодо методу "отримати" <code> (method = "get")</code>:
+          </dt>
+          <dd>
+          <dd>Цей метод додає дані форми до URL-адреси в парах ім’я / значення </dd>
+          <dd>Цей метод корисний для подання форми, коли користувач хоче додати результат до закладки</dd>
+          <dd>Існує обмеження кількості даних, які ви можете розмістити в URL-адресі (залежить від браузера),
+            тому ви не
+            можете бути впевнені, що всі дані форми будуть передані правильно</dd>
+          <dd>Ніколи не використовуйте метод "get" для передачі конфіденційної інформації! (пароль або інша
+            конфіденційна інформація буде видно в адресному рядку браузера) </dd>
+          <dt>Примітки щодо методу "розміщення" <code>(method = "post")</code>:</dt>
+          <dd> Цей метод передає дані форми як транзакцію після HTTP</dd>
+          <dd> Надіслані форми методом "опублікувати" не можна додавати в закладки</dd>
+          <dd> Метод "post" є надійнішим та безпечнішим, ніж "get", а "post" не має обмежень щодо розміру</dd>
+        </dl>
+
+        <p>Приклад:</p>
+        <form action="https://www.w3schools.com/action_page.php" method="get" target="_blank">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="submit" value="Submit using GET">
+          <input type="submit" formmethod="post" value="Submit using POST">
+        </form>
+        </form>
+        </p>
+      </article>
+
+
+      <!--HTML Form - Grouping Form Controls (fieldset)-->
+      <article>
+        <h3>Групування елементів керування формою <code>&lt;fieldset&gt;</code>:</h3>
+        <p>
+          Ви також групуєте логічно пов'язані елементи керування та мітки у веб-формі, використовуючи елемент
+          <code>&lt;legend&gt;</code>. <br>
+          Групування елементів керування формою за категоріями полегшує користувачам пошук елемента керування, що робить
+          форму більш зручною для користувача.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <fieldset>
+            <legend>Name</legend>
+            <label>Firstname: <input type="text" name="firstname"></label>
+            <label>Lastname: <input type="text" name="lastname"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </fieldset>
+          <fieldset>
+            <legend>Hobbies</legend>
+            <label><input type="checkbox" name="hobbies" value="soccer"> Soccer</label>
+            <label><input type="checkbox" name="hobbies" value="cricket"> Cricket</label>
+            <label><input type="checkbox" name="hobbies" value="baseball"> Baseball</label>
+          </fieldset>
+          <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email Address: <input type="email" name="email"></label>
+            <label>Phone Number: <input type="text" name="phone"></label>
+          </fieldset>
+        </form>
+        </p>
+      </article>
+    </section>
+
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>
