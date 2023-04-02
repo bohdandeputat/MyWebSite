@@ -265,7 +265,92 @@
       </article>
     </section>
 
+    <!--HTML Input Type - Select Single Boxes and Multiple Boxes. Submit and Reset Buttons-->
+    <section>
+      <h2>Список із єдиним вибором та множинним вибором. Кнопки "Надіслати" та "Скинути"</h2>
 
+      <!--HTML Input Type - Select Single Boxes-->
+      <article>
+        <h3>Список з єдиним вибором:</h3>
+        <code>&lt;select&gt;</code>
+        <p>
+          Поле вибору - це випадаючий список опцій, що дозволяє користувачеві вибрати один варіант зі спадного
+          списку параметрів. <br>
+          Поле вибору створюється за допомогою елементів <code>&lt;select&gt;</code> та
+          <code>&lt;option&gt;</code> . <br>
+          Елементи <code>&lt;option&gt;</code> в елементі <code>&lt;select&gt;</code> визначають кожен елемент
+          списку.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <select name=day_s size=1>
+            <option value=1> понеділок </option>
+            <option value=2> вівторок </option>
+            <option value=3 selected> середа </option>
+            <option value=4> четвер </option>
+            <option value=5> п'ятниця </option>
+            <option value=6> субота </option>
+            <option value=7> неділя </option>
+          </select>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Select Multiple Boxes-->
+      <article>
+
+        <h3>Список із множинним вибором (multiple):</h3>
+        <code>&lt;select multiple&gt;</code>
+        <p>
+          Поле вибору - це випадаючий список опцій, що дозволяє користувачеві вибрати кілька варіантів зі
+          списку параметрів. <br>
+          Поле вибору створюється за допомогою елементів <code>&lt;select&gt;</code> та
+          <code>&lt;option&gt;</code> . <br>
+          Елементи <code>&lt;option&gt;</code> в елементі <code>&lt;select&gt;</code> визначають кожен елемент
+          списку.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <select name=day_m[] size=7 multiple>
+            <option value=1 selected> понеділок </option>
+            <option value=2> вівторок </option>
+            <option value=3> середа </option>
+            <option value=4> четвер </option>
+            <option value=5> п'ятниця </option>
+            <option value=6> субота </option>
+            <option value=7> неділя </option>
+          </select>
+        </form>
+        </p>
+      </article>
+
+      <!--HTML Input Type - Submit and Reset Buttons-->
+      <article>
+        <h3>Кнопки надсилання та скидання:</h3>
+        <code>&lt;input type="submit"&gt;</code> <br>
+        <code>&lt;input type="reset"&gt;</code>
+        <p>
+          <code>submit</code> - Кнопка "Надіслати" використовується для надсилання даних форми на веб-сервер.
+          <br>
+          Після натискання кнопки "Надіслати" дані форми надсилаються до файлу, зазначеного в атрибуті дії
+          форми, для обробки
+          поданих
+          даних.
+        </p>
+        <p><code>reset</code> - Кнопка "Cкинути" скидає всі форми управління до значень за замовчуванням. <br>
+          Спробуйте наступний приклад, ввівши своє ім’я в текстовому полі та натисніть кнопку «Відправити»,
+          щоб побачити його в дії.</p>
+        </p>
+        <p>Приклад:</p>
+        <form action="https://www.tutorialrepublic.com/examples/html/action.php" method="post" target="_blank">
+          <label for="first-name">First Name:</label>
+          <input type="text" name="first-name" id="first-name">
+          <input type="submit" value="Submit">
+          <input type="reset" value="Reset">
+        </form>
+        </p>
+      </article>
+    </section>
 
 
 
