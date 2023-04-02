@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="description" content="HTML Basics">
+    <meta name="keywords" content="html, webdesign">
+    <meta name="author" content="Bohdan Deputat">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Favicon in browser tabs -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <!-- Document title in browser tabs -->
+    <title>Вступ до HTML</title>
+
+    <style>
+        html {
+            padding: 0;
+        }
+
+        body {
+            margin: 5;
+            padding: 0;
+            display: grid;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+
+        header,
+        footer {
+            grid-column: 1 / 4;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        main {
+            grid-column: 1 / 3;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        section,
+
+        article,
+
+        nav {
+            margin: 5px;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Основні приклади HTML</h1>
+
+        <!-- Main navigation -->
+
+        <nav>Навігація</nav>
+
+    </header>
+
+    <!-- Main part of site -->
+    <main>
+        <!-- Independent block -->
+
+
+        <!-- HTML Tables -->
+        <section>
+            <h2>Таблиці HTML</h2>
+            <p>Таблиця HTML дозволяє впорядковувати дані у рядки та стовпці. Вони зазвичай використовуються для
+                відображення табличних даних, таких як списки товарів, дані про клієнта, фінансові звіти тощо. </p>
+
+            <!--HTML Creating Tables -->
+            <article>
+                <h3>Створення таблиць в HTML</h3>
+                <p>Елемент HTML <code>&lt;table&gt;</code> представляє дані у вигляді двовимірної таблиці, що
+                    складається з рядків і стовпців (клітинок).</p>
+                <ul style="list-style-type:none;">
+                    <li><code>&lt;tr&gt;</code> - створення рядків таблиці;</li>
+                    <li><code>&lt;td&gt;</code> - створення стовпців всередині рядка таблиці;</li>
+                </ul>
+
+                <p>Приклад:</p>
+                <!-- Minimum valid markup for table -->
+                <p><em>Мінімальна допустима розмітка для таблиці</em></p>
+                <table>
+                    <tr>
+                        <td>Front-end</td>
+                    </tr>
+                </table>
+
+                <!-- Table row with data -->
+                <p><em>Рядок таблиці з даними</em></p>
+                <table>
+                    <tr>
+                        <td>Front-end</td>
+                        <td>Back-end</td>
+                        <td>Full-stack</td>
+                        <td>QA</td>
+                    </tr>
+                </table>
+
+                <!-- Table column with data -->
+                <p><em>Стовпець таблиці з даними</em></p>
+                <table>
+                    <tr>
+                        <td>Front-end</td>
+                    </tr>
+                    <tr>
+                        <td>Back-end</td>
+                    </tr>
+                    <tr>
+                        <td>Full-stack</td>
+                    </tr>
+                    <tr>
+                        <td>QA</td>
+                    </tr>
+                </table>
+
+                <!-- Simple example of table -->
+                <p><em>Простий приклад таблиці</em></p>
+                <table>
+                    <tr>
+                        <td>Speciality</td>
+                        <td>Quantity</td>
+                    </tr>
+                    <tr>
+                        <td>Front-end</td>
+                        <td>1 Person</td>
+                    </tr>
+                    <tr>
+                        <td>Back-end</td>
+                        <td>7 Persons</td>
+                    </tr>
+                    <tr>
+                        <td>Full-stack</td>
+                        <td>2 Persons</td>
+                    </tr>
+                    <tr>
+                        <td>QA</td>
+                        <td>5 Persons</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+
+    </main>
+
+    <!-- Aditional information -->
+    <aside></aside>
+
+    <!-- Footer -->
+    <footer></footer>
+</body>
+
+</html>
