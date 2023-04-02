@@ -20,6 +20,21 @@
 
   <!-- Document title in browser tabs -->
   <title>My Personal Web Site</title>
+
+
+  <!-- Local Styles -->
+  <style>
+    th,
+    td {
+      padding: 10px;
+    }
+
+    Caption,
+    th {
+      text-align: left;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -41,18 +56,23 @@
     <!-- Independent block -->
 
     <section>
-      <h1>Bogdan Deputat</h1>
+
       <!-- Peace of news, article -->
       <article>
-        <img src="images/BogdanDeputat.png" alt="Bogdan Deputat">
-        <h3>General information</h3>
-        <p>
-          <em>
-            Position: Associate Professor, Department of Digital Economics and Business Analytics</em><br>
-          <em>Scientific degree: Candidate of Physical and Mathematical Sciences (Ph. D.)<sup><a href="#C1"> 1</a></sup>
-          </em><br>
-          <em>Academic status: Associate Professor<sup><a href="#C2"> 2</a></sup></em>
-        </p>
+        <table>
+          <tr>
+            <td rowspan="4"><img src="images/BogdanDeputat.png" alt="Bogdan Deputat"></td>
+            <td>
+              <h1>Bogdan Deputat</h1>
+            </td>
+          </tr>
+          <tr><td><em>
+            Position: Associate Professor, Department of Digital Economics and Business Analytics</em></td></tr>
+          <tr><td><em>Scientific degree: Candidate of Physical and Mathematical Sciences (Ph. D.)<sup><a href="#C1"> 1</a></sup>
+          </em></td></tr>
+          <tr><td><em>Academic status: Associate Professor<sup><a href="#C2"> 2</a></sup></em></td></tr>
+        </table>
+
 
         <q>
           Live as if you were to die tomorrow. Learn as if you were to live forever.
@@ -137,53 +157,85 @@
     <section>
       <h2>Education, Work experience and Skills</h2>
       <article>
-        <h3>Education:</h3>
-        <p id="C1">
-          April 2015 - Associate Professor of the Department of General and Applied Physics of Ivano-Frankivsk National
-          Technical University of Oil and Gas. Scientific internships
-        </p>
-        <p id="C2">
-          February, 2011 - Vasyl Stefanyk PreCarpathian National University (Ivano-Frankivsk, Ukraine) Faculty: Physical
-          and Mathematics Faculty Qualification(s): Ph. D. (Doctor of Physics and Mathematics).<br>
+        <table>
+          <Caption>
+            <h3>Education:</h3>
+          </Caption>
+          <thead>
+            <tr>
+              <th>Dates</th>
+              <th>University</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="C1">
+              <td>Apr, 2015 </td>
+              <td>Associate Professor of the Department of General and Applied Physics of Ivano-Frankivsk National
+                Technical University of Oil and Gas. Scientific internships</td>
+            </tr>
+            <tr id="C2">
+              <td rowspan="2">Feb, 2011</td>
+              <td>Vasyl Stefanyk PreCarpathian National University (Ivano-Frankivsk, Ukraine) Faculty: Physical
+                and Mathematics Faculty Qualification(s): Ph. D. (Doctor of Physics and Mathematics).</td>
+            </tr>
+            <tr>
+              <td><strong>Dissertation:</strong> Synthesis, Crystal Structure and Electric Properties of Ceramics
+                Li<sub>2</sub>O-Fe<sub>2</sub>O<sub>3</sub>-Al<sub>2</sub>O<sub>3</sub> on Transition to Metastable
+                Condition</td>
+            </tr>
+            <tr>
+              <td>June, 2004</td>
+              <td>Vasyl Stefanyk PreCarpathian National University (Ivano-Frankivsk, Ukraine)
+                Faculty: Physical and Mathematics Faculty
+                Specialty: Radiophysics and Electronics Specialization: Information Systems and Technologies
+                Qualification(s):
+                Bachelor / Specialist.</td>
+            </tr>
+          </tbody>
+        </table>
 
-          <strong>Dissertation:</strong> Synthesis, Crystal Structure and Electric Properties of Ceramics
-          Li<sub>2</sub>O-Fe<sub>2</sub>O<sub>3</sub>-Al<sub>2</sub>O<sub>3</sub> on Transition to Metastable Condition
-        </p>
-        <p>
-          1999-2004 - Vasyl Stefanyk PreCarpathian National University (Ivano-Frankivsk, Ukraine)
-          Faculty: Physical and Mathematics Faculty
-          Specialty: Radiophysics and Electronics Specialization: Information Systems and Technologies Qualification(s):
-          Bachelor / Specialist.
-        </p>
-      </article>
-      <article>
-        <h3>Additional education:</h3>
-        03.2019 - 06.2019 Workday Training: (Report Writer, Calculated Fields, Integration System Fundamentals/Advanced
-        Security Fundamentals/Advanced, Workday Studio Fundamentals/Advanced)<br>
-        09.2019 - 12.2019 - System Integration, SoftServe IT Academy, (Lviv, Ukraine)<br>
-        01.2018 - 04.2018 - DevOps Development for Unix, SoftServe IT Academy, (Ivano-Frankivsk, Ukraine)<br>
-        2017 - The course of financial literacy for owners and business executives, (Ivano-Frankivsk, Ukraine)<br>
-        2016 - Public School of Business MBS, (Lviv, Ukraine).
       </article>
 
       <article>
-        <h3 id="C3">Work experience:</h3>
-        <p>
-          2004 - 2005 - Engineer of the Payment Systems Equipment Maintenance Department of the Information Technologies
-          Department at the PrivatBank Ivano-Frankivsk Branch.<br>
-          2005 - 2008 - Postgraduate student of the Department of Materials Science and Modern Technologies of Vasyl
-          Stefanyk Precarpathian National University.<br>
-          2008 - 2011 - Lecturer at the Department of Fundamental Disciplines, Ivano-Frankivsk Institute of Management,
-          TNEU.<br>
-          2011 - 2014 - Deputy Director of the Institute of Fundamental, Humanities and Distance Learning of
-          Ivano-Frankivsk National Technical University of Oil and Gas.<br>
-          2011 - 2018 - Associate Professor, Department of General and Applied Physics, Ivano-Frankivsk National
-          Technical University of Oil and Gas.<br>
-          2018 - 2020 - Workday System Integration Engineer, System Security Administrator, DevOps, Tech/Team Lead.,
-          SoftServe INC<br>
-          2020 - present - Senior Workday System Integration Engineer, System Security Administrator., UKEESS Software
-          House
-        </p>
+        <table>
+          <caption>
+            <h3 id="C3">Work experience:</h3>
+          </caption>
+          <thead>
+            <tr>
+              <th>Dates</th>
+              <th>Work</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2011 - 2018</td>
+              <td>Associate Professor, Department of General and Applied Physics, Ivano-Frankivsk National Technical
+                University of Oil and Gas.</td>
+            </tr>
+            <tr>
+              <td>2011 - 2014</td>
+              <td>Deputy Director of the Institute of Fundamental, Humanities and Distance Learning of Ivano-Frankivsk
+                National Technical University of Oil and Gas.</td>
+            </tr>
+            <tr>
+              <td>2008 - 2011</td>
+              <td>Lecturer at the Department of Fundamental Disciplines, Ivano-Frankivsk Institute of Management, TNEU.
+              </td>
+            </tr>
+            <tr>
+              <td>2005 - 2008</td>
+              <td>Postgraduate student of the Department of Materials Science and Modern Technologies of Vasyl Stefanyk
+                Precarpathian National University.</td>
+            </tr>
+            <tr>
+              <td>2004 - 2005</td>
+              <td>Engineer of the Payment Systems Equipment Maintenance Department of the Information Technologies
+                Department at the PrivatBank Ivano-Frankivsk Branch.</td>
+            </tr>
+          </tbody>
+        </table>
+
       </article>
 
       <article>
