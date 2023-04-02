@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до HTML</title>
+
+  <style>
+    html {
+      padding: 0;
+    }
+
+    body {
+      margin: 5;
+      padding: 0;
+      display: grid;
+      font-size: 16px;
+      color: rgb(0, 0, 0);
+    }
+
+    header,
+    footer {
+      grid-column: 1 / 4;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+
+    main {
+      grid-column: 1 / 3;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+
+    section,
+
+    article,
+
+    nav {
+      margin: 5px;
+      border: 1px dashed #000;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади HTML</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- Independent block -->
+
+    <!-- HTML What is HTML Form -->
+    <section>
+      <h2>Що таке форма HTML?</h2>
+      <p>Форми – важливий елемент багатьох веб-сторінок, оскільки з їх допомогою можна отримати дані, введені
+        користувачами і обробити їх. Форми надають нам значну кількість елементів управління і полів, в які користувач
+        може ввести пошуковий запит, або свій логін і пароль, або заповнити форму для прийому на роботу.</p>
+
+      <!-- HTML Forms -->
+      <article>
+        <h3>Форма HTML</h3>
+        <p>Форма HTML використовується для збору вводу користувача. Введення даних користувача найчастіше надсилається
+          на сервер для обробки.
+        </p>
+        <p>Тег <code>&lt;form&gt;</code> використовується для створення HTML-форми.</p>
+        <q><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form" target="_blank">MND: The Form
+            element</a></q>
+        <p>Приклад:</p>
+        <!-- HTML Forms -->
+        <p> Для отримання та обробки даних форм використовуються мови веб-програмування, такі як PHP, Node.js. </p>
+        <form action="https://www.w3schools.com/action_page.php" method="post" target="_blank">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="Bohdan"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Deputat"><br><br>
+          <input type="submit" value="Submit">
+        </form>
+        <p>Форми містять спеціальні елементи, які називаються елементами управління, такими як поле введення, прапорці,
+          перемикачі, кнопки надсилання тощо. Користувачі зазвичай заповнюють форму, змінюючи її елементи керування,
+          наприклад введення тексту, вибір елементів тощо та надсилання цієї форми на веб-сервер для подальшої обробки.
+        </p>
+      </article>
+
+      <!--The <label> Element-->
+      <article>
+        <h3>Елемент <code>&lt;label&gt;</code></h3>
+        <p>Зверніть увагу на використання <code>&lt;label&gt;</code> елемента у прикладі вище.<br>
+          <code>&lt;label&gt;</code> Тег визначає мітку для багатьох елементів форми. <br>
+          <code>&lt;label&gt;</code> Елемент корисний для користувачів читання з екрану, тому що екран-читач буде читати
+          вголос
+          етикетку , коли фокус користувача на вхідному елементі. <br>
+          <code>&lt;label&gt;</code> Елемент також допомагає користувачам , які мають труднощі з клацати на дуже
+          невеликих ділянках
+          (наприклад, радиокнопки і прапорці) - тому що , коли користувач натискає на текст всередині
+          <code>&lt;label&gt;</code>
+          елемента, він перемикає кнопки радіо / прапорець.
+        </p>
+      </article>
+    </section>
+
+
+
+
+
+
+
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

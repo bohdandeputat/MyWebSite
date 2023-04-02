@@ -16,3 +16,4 @@
 - [#07 - Зображення та малюнки HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.07-Images-and-Pictures)
 - [#08 - Списки HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.08-Lists)
 - [#09 - Таблиці HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.09-Tables)
+- [#10 - Форми HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.10-Forms)
