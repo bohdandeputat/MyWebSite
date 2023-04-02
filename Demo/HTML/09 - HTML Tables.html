@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="description" content="HTML Basics">
+    <meta name="keywords" content="html, webdesign">
+    <meta name="author" content="Bohdan Deputat">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Favicon in browser tabs -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <!-- Document title in browser tabs -->
+    <title>Вступ до HTML</title>
+
+    <style>
+        html {
+            padding: 0;
+        }
+
+        body {
+            margin: 5;
+            padding: 0;
+            display: grid;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+
+        header,
+        footer {
+            grid-column: 1 / 4;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        main {
+            grid-column: 1 / 3;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        section,
+
+        article,
+
+        nav {
+            margin: 5px;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+
+        /* HTML Table - Adding Borders and Paddings */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        /* HTML Table - Adding Borders and Paddings */
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+        }
+
+
+        /*A Special Style for One Table */
+        table.secondary caption {
+            caption-side: bottom;
+        }
+
+        #t01 {
+            width: 100%;
+        }
+
+        #t01 tr:nth-child(even) {
+            background-color: lightpink;
+        }
+
+        #t01 tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+
+        #t01 th {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Основні приклади HTML</h1>
+
+        <!-- Main navigation -->
+
+        <nav>Навігація</nav>
+
+    </header>
+
+    <!-- Main part of site -->
+    <main>
+        <!-- Independent block -->
+
+
+        <!-- HTML Tables -->
+        <section>
+            <h2>Таблиці HTML</h2>
+            <p>Таблиця HTML дозволяє впорядковувати дані у рядки та стовпці. Вони зазвичай використовуються для
+                відображення табличних даних, таких як списки товарів, дані про клієнта, фінансові звіти тощо. </p>
+
+            <!--HTML Creating Tables -->
+            <article>
+                <h3>Створення таблиць в HTML</h3>
+                <p>Елемент HTML <code>&lt;table&gt;</code> представляє дані у вигляді двовимірної таблиці, що
+                    складається з рядків і стовпців (клітинок).</p>
+                <ul style="list-style-type:none;">
+                    <li><code>&lt;tr&gt;</code> - створення рядків таблиці;</li>
+                    <li><code>&lt;td&gt;</code> - створення стовпців всередині рядка таблиці;</li>
+                </ul>
+
+                <p>Приклад:</p>
+                <!-- Minimum valid markup for table -->
+                <p><em>Мінімальна допустима розмітка для таблиці</em></p>
+                <table>
+                    <tr>
+                        <td>Front-end</td>
+                    </tr>
+                </table>
+
+                <!-- Table row with data -->
+                <p><em>Рядок таблиці з даними</em></p>
+                <table>
+                    <tr>
+                        <td>Front-end</td>
+                        <td>Back-end</td>
+                        <td>Full-stack</td>
+                        <td>QA</td>
+                    </tr>
+                </table>
+
+                <!-- Table column with data -->
+                <p><em>Стовпець таблиці з даними</em></p>
+                <table>
+                    <tr>
+                        <td>Front-end</td>
+                    </tr>
+                    <tr>
+                        <td>Back-end</td>
+                    </tr>
+                    <tr>
+                        <td>Full-stack</td>
+                    </tr>
+                    <tr>
+                        <td>QA</td>
+                    </tr>
+                </table>
+
+                <!-- Simple example of table -->
+                <p><em>Простий приклад таблиці</em></p>
+                <table>
+                    <tr>
+                        <td>Speciality</td>
+                        <td>Quantity</td>
+                    </tr>
+                    <tr>
+                        <td>Front-end</td>
+                        <td>1 Person</td>
+                    </tr>
+                    <tr>
+                        <td>Back-end</td>
+                        <td>7 Persons</td>
+                    </tr>
+                    <tr>
+                        <td>Full-stack</td>
+                        <td>2 Persons</td>
+                    </tr>
+                    <tr>
+                        <td>QA</td>
+                        <td>5 Persons</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+        <!-- HTML Tables - Adding Borders, Paddings and Collapsed Borders-->
+        <section>
+            <h2>Таблиці HTML - Оформлення вигляду таблиць (додавання меж, відступів і згорнутих меж.)</h2>
+            <p> Більшість
+                атрибутів елемента <code>&lt;table&gt;</code>, призначених для оформлення
+                вигляду таблиць у попередніх версіях HTML було видалено в HTML5, тому не використовуйте їх безпосередньо
+                у
+                HTML документі. <br>
+                Натомість для стилізації таблиць HTML використовуйте CSS атрибути:
+                <code>border, cellpadding, cellspacing, width, align</code> тощо.
+            </p>
+
+            <!-- HTML Table - Adding and Collapsed Borders, Paddings and Alignment -->
+            <article>
+                <h3>Таблиця HTML - Операції з межами, відступи комірок та вирівнювання заголовків</h3>
+                <p>За замовчуванням таблиці не мають меж.</p>
+                <p>За замовчуванням межі навколо таблиці та їх комірки відокремлені одна від одної.</p>
+                <p> За замовчуванням
+                    текст в комірці вирівнюється по горизонталі по центру комірки.</p>
+                <p> Щоб змінити налаштування за замовчуванням, ви можете використовувати властивості CSS:
+                </p>
+
+                <ul style="list-style-type:none;">
+                    <li><code>border</code> - додавання меж до таблиць;</li>
+                    <li><code>padding</code> - збільшенняя місця навколо вмісту в клітинках таблиці;</li>
+                    <li><code>border-collapse</code> - згорнути меж в таблиці;</li>
+                    <li><code>text-align</code> - вирівнювання вмісту в клітинках таблиці;</li>
+                </ul>
+
+                <p><em>Наступні правила стилю додають 1-піксельну межу до таблиці та 10-піксельну відступ до її
+                        комірок.</em>
+                <pre>
+                <code>&lt;style&gt; 
+                    table, th, td {
+                        border: 1px solid black;
+                      }
+                    th, td {
+                        padding: 10px;
+                      }
+                &lt;/style&gt;</code></pre>
+
+                <p><em>Наступні правила стилю згортають межі таблиці та вирівнюють текст заголовка таблиці зліва.</em>
+                <pre>
+                <code>&lt;style&gt; 
+                    table {
+                        border-collapse: collapse;
+                    }
+                    th {
+                        text-align: left;
+                    }
+                &lt;/style&gt;</code></pre>
+
+                <p>Приклад:</p>
+
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Peter Parker</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Clark Kent</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Harry Potter</td>
+                        <td>11</td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+
+        <!-- HTML Table Spanning Multiple Rows and Columns (Colspan & Rowspan) -->
+        <section>
+            <h2>Охоплення стовпців і рядків таблиці HTML</h2>
+            <p>Таблиці HTML можуть мати комірки, які охоплюють кілька рядків і/або стовпців.</p>
+            <p>Розбиття дозволяє розширити рядки та стовпці таблиці за кількома іншими рядками та стовпцями.<br>
+                Зазвичай комірка таблиці не може переходити в простір під або над іншою коміркою таблиці.<br>
+                Але, ви можете використовувати атрибути <code>rowpan</code> або <code>colspan</code>, щоб охоплювати
+                кілька рядків або стовпців у таблиці.
+
+                <!-- HTML Table - Colspan -->
+            <article>
+                <h3>Охоплення декількох стовпців</h3>
+                <p>Щоб охопити в одну клітинку кілька стовпців, використовуйте атрибут <code>colspan</code></p>
+
+                <p>Приклад:</p>
+                <p><em>Наступний приклад охоплює в одну клітинку два стовпці Phone.</em></p>
+
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Phone</th>
+                    </tr>
+                    <tr>
+                        <td>John Carter</td>
+                        <td>5550192</td>
+                        <td>5550152</td>
+                    </tr>
+                </table>
+            </article>
+
+            <!-- HTML Table - Rowspan -->
+            <article>
+                <h3>Охоплення декількох рядків</h3>
+                <p>Щоб охопити в одну клітинку кілька рядків, використовуйте атрибут <code>rowspan</code></p>
+                <p>Аналогічним чином ви можете використовувати атрибут rowpan для створення комірки, яка охоплює більше
+                    одного
+                    рядка.<br>
+                <p><em>Наступний приклад охоплює в одну клітинку два рядки Phone.</em></p>
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td>John Carter</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Phone:</th>
+                        <td>55577854</td>
+                    </tr>
+                    <tr>
+                        <td>55577855</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+
+        <!-- HTML Table - Captions, Header, Body, and Footer -->
+        <section>
+            <h2>Підписи, верхній, основний та нижній колонтитули таблиці HTML</h2>
+
+            <p>Додавання підписів до таблиць</p>
+            <p>Визначення верхнього, основного та нижнього колонтитулів таблиці</p>
+
+            <!-- HTML Table - Captions, Header, Body, and Footer -->
+            <article>
+                <p>Ви можете вказати підпис (або заголовок) для своїх таблиць за допомогою елемента
+                    <code>&lt;caption&gt;</code>.<br>
+                    Елемент <code>&lt;caption&gt;</code> повинен бути розміщений безпосередньо після відкриваючого тегу
+                    <code>&lt;table&gt;</code>.<br>
+                    За замовчуванням підпис з’являється у верхній частині таблиці, але ви можете змінити його положення
+                    за
+                    допомогою властивості сторони субтитрів CSS
+                </p>
+
+                <p>HTML надає ряд тегів <code>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</code>, які допомагають вам
+                    створити більш
+                    структуровану таблицю, визначаючи області верхнього, нижнього та нижнього колонтитулів відповідно.
+                </p>
+                <p>Приклад:</p>
+                <!-- Minimum valid markup for table -->
+                <table>
+                    <caption>Items and Expenditure</caption>
+                    <thead>
+                        <tr>
+                        <tr>
+                            <th>Items</th>
+                            <th>Expenditure</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stationary</td>
+                            <td>2,000</td>
+                        </tr>
+                        <tr>
+                            <td>Furniture</td>
+                            <td>10,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td>12,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <!-- HTML Table - Individual table Styling -->
+            <article>
+                <h3>Таблиця HTML - Особливий стиль для окремої таблиці</h3>
+                <p>Щоб визначити спеціальний стиль для однієї конкретної таблиці, додайте до неї id атрибут:
+                </p>
+                <p>Приклад:</p>
+                <table id="t01" class="secondary">
+                    <caption>Users Info</caption>
+                    <thead>
+                        <tr>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Average</th>
+                            <th>75</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Aditional information -->
+    <aside></aside>
+
+    <!-- Footer -->
+    <footer></footer>
+</body>
+
+</html>
