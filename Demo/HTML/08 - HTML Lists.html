@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="description" content="HTML Basics">
+    <meta name="keywords" content="html, webdesign">
+    <meta name="author" content="Bohdan Deputat">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Favicon in browser tabs -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <!-- Document title in browser tabs -->
+    <title>Вступ до HTML</title>
+
+    <style>
+        html {
+            padding: 0;
+        }
+
+        body {
+            margin: 5;
+            padding: 0;
+            display: grid;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+
+        header,
+        footer {
+            grid-column: 1 / 4;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        main {
+            grid-column: 1 / 3;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        section,
+
+        article,
+
+        nav {
+            margin: 5px;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Основні приклади HTML</h1>
+
+        <!-- Main navigation -->
+
+        <nav>Навігація</nav>
+
+    </header>
+
+    <!-- Main part of site -->
+    <main>
+        <!-- Independent block -->
+        <!-- HTML Lists -->
+        <section>
+            <h2>Списки HTML</h2>
+            <p>Списки HTML використовуються для подання переліку інформації в чітко сформованому та семантичному
+                вигляді.</p>
+
+            <p>У HTML є три різні типи списків, і кожен із них має певне призначення та значення.</p>
+            <p><strong>Невпорядкований список</strong> - використовується для створення списку пов’язаних елементів без
+                певного порядку. </p>
+            <p><strong>Впорядкований список</strong> - використовується для створення списку пов’язаних елементів у
+                певному
+                порядку. </p>
+            <p><strong>Список описів</strong> - використовується для створення списку термінів та їх описів. </p>
+
+            <!--HTML Unordered List-->
+            <article>
+                <h3>Невпорядкований список HTML</h3>
+                <p>Невпорядкований список починається з тегу <code>&lt;ul&gt;</code>. <br>
+                    Кожен елемент списку починається з тегу <code>&lt;li&gt;</code>.<br>
+                    Елементи списку за замовчуванням будуть позначені маркерами.
+                </p>
+                <p>Приклад:</p>
+                <ul>
+                    <li> Шоколадний торт </li>
+                    <li> Шварцвальдський торт </li>
+                    <li> Ананасовий торт </li>
+                </ul>
+            </article>
+            <article>
+                <h3>Вкладений невпорядкований список HTML</h3>
+
+                <p>Створення списоку всередині списку (вкладений списоку).</p>
+                <p>Ви також можете змінити тип маркера у своєму невпорядкованому списку за допомогою властивості типу
+                    CSS <code> list-style</code>.<br>
+                </p>
+                <pre>
+                    <code>
+                      ul {
+                        list-style-type: square;    
+                        }
+                    </code>
+                </pre>
+                <p>Приклад:</p>
+
+                <ul>
+                    <li> Шоколадний торт
+                        <ul>
+                            <li> Шоколадний оксамитовий торт </li>
+                            <li> Шоколадний лавовий торт </li>
+                        </ul>
+                    </li>
+                    <li> Шварцвальдський торт </li>
+                    <li> Ананасовий торт </li>
+                </ul>
+                <em>Наступне правило стилю змінює тип маркера з диска за замовчуванням на квадратний:</em>
+                <ul>
+                    <li> Шоколадний торт
+                        <ul style="list-style-type:square;">
+                            <li> Шоколадний оксамитовий торт </li>
+                            <li> Шоколадний лавовий торт </li>
+                        </ul>
+                    </li>
+                    <li> Шварцвальдський торт </li>
+                    <li> Ананасовий торт </li>
+                </ul>
+            </article>
+        </section>
+
+
+        <!-- HTML Ordered List-->
+        <section>
+            <h2>Упорядковані списки HTML</h2>
+            <p>Упорядкований список, створений за допомогою <code>&lt;ol&gt;</code> елемента, і кожен елемент списку
+                починається з елемента <code>&lt;li&gt;</code>. <br>
+                Упорядковані списки використовуються, коли важливий порядок елементів списку.
+            </p>
+
+            <!-- HTML Simple Ordered List-->
+            <article>
+                <h3> Впорядкований список</h3>
+                <p>Елементи списку в упорядкованому списку позначені цифрами або буквами.</p>
+                <p>Списки можуть бути вкладеними (список у списку).</p>
+                <p>Приклад:</p>
+                <ol>
+                    <li> Пристебніть ремінь безпеки </li>
+                    <li> Запустіть двигун автомобіля </li>
+                    <li> Озирніться і рушайте
+                        <ol>
+                            <li> Перевірте сліпе місце </li>
+                            <li> Перевірте безпеку навколишнього середовища </li>
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+
+            <!-- HTML Ordered List with start and reversed-->
+            <article>
+                <h3>Впорядкований список з визначеним стартовим числом чи порядком сортування</h3>
+                <p>За замовчуванням упорядкований список почне відлік з <code>1</code>. <br>
+                    Якщо ви хочете почати відлік із зазначеного числа, ви можете використати атрибут <code>start</code>:
+                </p>
+
+                <p>Приклад:</p>
+                <ol start="10">
+                    <li> Пристебніть ремінь безпеки </li>
+                    <li> Запустіть двигун автомобіля </li>
+                    <li> Озирніться і рушайте
+                        <ol reversed>
+                            <li> Перевірте сліпе місце </li>
+                            <li> Перевірте безпеку навколишнього середовища </li>
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+
+            <!-- HTML Ordered List - The Type Attribute -->
+            <article>
+                <h3> Упорядкований список HTML – атрибут типу</h3>
+                <p>Атрибут <code>type</code> тегу <code>&lt;ol&gt;</code> визначає тип маркера елемента списку:</p>
+                <ul style="list-style-type:none;">
+                    <li><code>type="1"</code> - Елементи списку будуть пронумеровані цифрами (за замовчуванням);</li>
+                    <li><code>type="A"</code> - Елементи списку будуть пронумеровані великими літерами;</li>
+                    <li><code>type="a"</code> - Елементи списку будуть пронумеровані малими літерами;</li>
+                    <li><code>type="I"</code> - Елементи списку будуть пронумеровані великими римськими цифрами;</li>
+                    <li><code>type="i"</code> - Елементи списку будуть пронумеровані малими римськими цифрами;</li>
+                </ul>
+
+                <p>Ви також можете змінити тип маркера у своєму невпорядкованому списку за допомогою властивості типу
+                    CSS
+                    list-style-type.<br>
+                    <em>Наступне правило стилю змінює тип маркера з диска за замовчуванням на roman numbers:</em>
+                </p>
+                <pre><code>
+                    ol {
+                        list-style-type: upper-roman;
+                       }</code></pre>
+                <p>Приклад:</p>
+                <ol type="I">
+                    <li> Пристебніть ремінь безпеки </li>
+                    <li> Запустіть двигун автомобіля </li>
+                    <li> Озирніться і рушайте
+                        <ol type="a">
+                            <li> Перевірте сліпе місце </li>
+                            <li> Перевірте безпеку навколишнього середовища </li>
+                        </ol>
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <!-- HTML Description Lists-->
+        <section>
+            <h2>Інші списки HTML</h2>
+            <p>HTML також підтримує списки описів. Список опису — це список термінів з описом кожного терміна.</p>
+            <article>
+                <h3>Списки описів HTML</h3>
+                <p> Тег <code>&lt;dl&gt;</code> визначає список описів, тег визначає термін (назва), а тег описує кожен
+                    термін: <code>&lt;dt&gt;</code> <code>&lt;dd&gt;</code></p>
+                <p>Браузери зазвичай відтворюють списки визначень, розміщуючи терміни та визначення в окремих рядках, де
+                    визначення термінів мають незначний відступ.
+                    визначає тип маркера елемента списку:</p>
+                <ul style="list-style-type:none;">
+                    <li><code>&lt;dl&gt;</code> - тег визначає список опису;</li>
+                    <li><code>&lt;dt&gt;</code> - тег визначає термін (ім'я);</li>
+                    <li><code>&lt;dd&gt;</code> - тег описує кожен термін;</li>
+                </ul>
+                <p>Приклад:</p>
+                <dl>
+                    <dt> Режисер: </ dt>
+                    <dd> Петро Точилін </ dd>
+                    <dt> В ролях: </ dt>
+                    <dd> Андрій Гайдулян </ dd>
+                    <dd> Олексій Гаврилов </ dd>
+                    <dd> Віталій Гогунський </ dd>
+                    <dd> Марія Кожевнікова </ dd>
+                </dl>
+                </dl>
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Aditional information -->
+    <aside></aside>
+
+    <!-- Footer -->
+    <footer></footer>
+</body>
+
+</html>
