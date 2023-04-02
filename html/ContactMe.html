@@ -15,7 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Document Favicon in browser tabs -->
-  <link rel="shortcut icon" href="../images/icon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../images/logo/icon.ico" type="image/x-icon" />
 
   <!-- Document title in browser tabs -->
   <title>My Personal Web Site - Contact information</title>
@@ -25,7 +25,14 @@
   <!-- Header -->
   <header>
     <!-- Main navigation -->
-    <nav>My Logo | My Menu</nav>
+    <nav>
+      <picture>
+        <source media="(min-width: 1000px)" srcset="../images/logo/logo-large.png">
+        <source media="(max-width: 500px)" srcset="../images/logo/logo-small.png">
+        <img src="../images/logo/logo-default.png" alt="My logo">
+      </picture>
+      </a> | My Menu
+    </nav>
   </header>
 
   <!-- Main part of site -->
@@ -51,7 +58,7 @@
             Google Scholar profile: <a href="https://scholar.google.com.ua/citations?hl=uk&user=w58ey7gAAAAJ"
               target="_self"> scholar.google.com.ua </a><br>
             Facebook profile: <a href="https://www.facebook.com/bdeputat" target="_self">www.facebook.com</a>
-          </p> 
+          </p>
         </address>
         <hr>
         </p>
