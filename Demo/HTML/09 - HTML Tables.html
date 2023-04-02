@@ -157,6 +157,86 @@
             </article>
         </section>
 
+        <!-- HTML Tables - Adding Borders, Paddings and Collapsed Borders-->
+        <section>
+            <h2>Таблиці HTML - Оформлення вигляду таблиць (додавання меж, відступів і згорнутих меж.)</h2>
+            <p> Більшість
+                атрибутів елемента <code>&lt;table&gt;</code>, призначених для оформлення
+                вигляду таблиць у попередніх версіях HTML було видалено в HTML5, тому не використовуйте їх безпосередньо
+                у
+                HTML документі. <br>
+                Натомість для стилізації таблиць HTML використовуйте CSS атрибути:
+                <code>border, cellpadding, cellspacing, width, align</code> тощо.
+            </p>
+
+            <!-- HTML Table - Adding and Collapsed Borders, Paddings and Alignment -->
+            <article>
+                <h3>Таблиця HTML - Операції з межами, відступи комірок та вирівнювання заголовків</h3>
+                <p>За замовчуванням таблиці не мають меж.</p>
+                <p>За замовчуванням межі навколо таблиці та їх комірки відокремлені одна від одної.</p>
+                <p> За замовчуванням
+                    текст в комірці вирівнюється по горизонталі по центру комірки.</p>
+                <p> Щоб змінити налаштування за замовчуванням, ви можете використовувати властивості CSS:
+                </p>
+
+                <ul style="list-style-type:none;">
+                    <li><code>border</code> - додавання меж до таблиць;</li>
+                    <li><code>padding</code> - збільшенняя місця навколо вмісту в клітинках таблиці;</li>
+                    <li><code>border-collapse</code> - згорнути меж в таблиці;</li>
+                    <li><code>text-align</code> - вирівнювання вмісту в клітинках таблиці;</li>
+                </ul>
+
+                <p><em>Наступні правила стилю додають 1-піксельну межу до таблиці та 10-піксельну відступ до її
+                        комірок.</em>
+                <pre>
+                <code>&lt;style&gt; 
+                    table, th, td {
+                        border: 1px solid black;
+                      }
+                    th, td {
+                        padding: 10px;
+                      }
+                &lt;/style&gt;</code></pre>
+
+                <p><em>Наступні правила стилю згортають межі таблиці та вирівнюють текст заголовка таблиці зліва.</em>
+                <pre>
+                <code>&lt;style&gt; 
+                    table {
+                        border-collapse: collapse;
+                    }
+                    th {
+                        text-align: left;
+                    }
+                &lt;/style&gt;</code></pre>
+
+                <p>Приклад:</p>
+
+                <table>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Peter Parker</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Clark Kent</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Harry Potter</td>
+                        <td>11</td>
+                    </tr>
+                </table>
+
+            </article>
+        </section>
+
 
     </main>
 
