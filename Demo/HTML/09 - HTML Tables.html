@@ -58,6 +58,29 @@
             border: 1px dashed #000;
             padding: 5px;
         }
+
+
+        /* HTML Table - Adding Borders and Paddings */
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+        }
+
+        /* HTML Table - Adding Borders and Paddings */
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+        }
+        
     </style>
 </head>
 
@@ -237,6 +260,61 @@
             </article>
         </section>
 
+        <!-- HTML Table Spanning Multiple Rows and Columns (Colspan & Rowspan) -->
+        <section>
+            <h2>Охоплення стовпців і рядків таблиці HTML</h2>
+            <p>Таблиці HTML можуть мати комірки, які охоплюють кілька рядків і/або стовпців.</p>
+            <p>Розбиття дозволяє розширити рядки та стовпці таблиці за кількома іншими рядками та стовпцями.<br>
+                Зазвичай комірка таблиці не може переходити в простір під або над іншою коміркою таблиці.<br>
+                Але, ви можете використовувати атрибути <code>rowpan</code> або <code>colspan</code>, щоб охоплювати
+                кілька рядків або стовпців у таблиці.
+
+                <!-- HTML Table - Colspan -->
+            <article>
+                <h3>Охоплення декількох стовпців</h3>
+                <p>Щоб охопити в одну клітинку кілька стовпців, використовуйте атрибут <code>colspan</code></p>
+
+                <p>Приклад:</p>
+                <p><em>Наступний приклад охоплює в одну клітинку два стовпці Phone.</em></p>
+
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th colspan="2">Phone</th>
+                    </tr>
+                    <tr>
+                        <td>John Carter</td>
+                        <td>5550192</td>
+                        <td>5550152</td>
+                    </tr>
+                </table>
+            </article>
+
+            <!-- HTML Table - Rowspan -->
+            <article>
+                <h3>Охоплення декількох рядків</h3>
+                <p>Щоб охопити в одну клітинку кілька рядків, використовуйте атрибут <code>rowspan</code></p>
+                <p>Аналогічним чином ви можете використовувати атрибут rowpan для створення комірки, яка охоплює більше
+                    одного
+                    рядка.<br>
+                <p><em>Наступний приклад охоплює в одну клітинку два рядки Phone.</em></p>
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Name:</th>
+                        <td>John Carter</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Phone:</th>
+                        <td>55577854</td>
+                    </tr>
+                    <tr>
+                        <td>55577855</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
 
     </main>
 
