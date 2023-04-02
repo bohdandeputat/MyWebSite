@@ -80,7 +80,6 @@
         th {
             text-align: left;
         }
-        
     </style>
 </head>
 
@@ -314,6 +313,62 @@
                     </tr>
                 </table>
             </article>
+        </section>
+
+
+        <!-- HTML Table - Captions, Header, Body, and Footer -->
+        <section>
+            <h2>Підписи, верхній, основний та нижній колонтитули таблиці HTML</h2>
+
+            <p>Додавання підписів до таблиць</p>
+            <p>Визначення верхнього, основного та нижнього колонтитулів таблиці</p>
+
+        <!-- HTML Table - Captions, Header, Body, and Footer -->
+            <article>
+                <p>Ви можете вказати підпис (або заголовок) для своїх таблиць за допомогою елемента
+                    <code>&lt;caption&gt;</code>.<br>
+                    Елемент <code>&lt;caption&gt;</code> повинен бути розміщений безпосередньо після відкриваючого тегу
+                    <code>&lt;table&gt;</code>.<br>
+                    За замовчуванням підпис з’являється у верхній частині таблиці, але ви можете змінити його положення
+                    за
+                    допомогою властивості сторони субтитрів CSS
+                </p>
+
+                <p>HTML надає ряд тегів <code>&lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</code>, які допомагають вам
+                    створити більш
+                    структуровану таблицю, визначаючи області верхнього, нижнього та нижнього колонтитулів відповідно.
+                </p>
+                <p>Приклад:</p>
+                <!-- Minimum valid markup for table -->
+                <table>
+                    <caption>Items and Expenditure</caption>
+                    <thead>
+                        <tr>
+                        <tr>
+                            <th>Items</th>
+                            <th>Expenditure</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Stationary</td>
+                            <td>2,000</td>
+                        </tr>
+                        <tr>
+                            <td>Furniture</td>
+                            <td>10,000</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td>12,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
         </section>
 
     </main>
