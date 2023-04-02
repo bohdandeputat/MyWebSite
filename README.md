@@ -13,3 +13,4 @@
 - [#04 - Стилі HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.04-HTML-Styles)
 - [#05 - Форматування тексту HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.05-Text-Formatting)
 - [#06 - Цитування та посилання HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.06-Quotation-and-Links)
+- [#07 Зображення та малюнки HTML](https://github.com/bohdandeputat/MyWebSite/tree/HTML.07-Images-and-Pictures)
