@@ -9,40 +9,38 @@
     <link rel="icon" href="icon.ico">
     <title>Simple Landing Page</title>
 
-    <!--CSS Display Property -->
+    <!-- CSS Static and Relative Positioning -->
     <style>
-        /*display: block;*/
-        div.top-container span {
-            background-color: aqua;
+        span {
             display: block;
-            text-decoration: underline;
-            width: 300px;
+            margin: 20px;
         }
-
-        /*display: inline;*/
-        .middle-container p {
-            display: inline;
-            background-color: aqua;
-            width: 300px;
-        }
-
-        /*display: inline;*/
-        p.none {
-            display: none;
-            background-color: aqua;
-            width: 300px;
-        }
-
-        /*display: inline-block;*/
-        .bottom-container p {
+        .top-container {
+            background-color: red;
+            width: 200px;
+            height: 200px;
             display: inline-block;
-            background-color: aqua;
-            width: 250px;
+            position: relative;
+            left: 408px;
         }
 
-        /*display: inline-block;*/
-        p.hidden {
-            visibility: hidden;
+        .middle-container {
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            position: relative;
+            right: 204px;
+
+        }
+
+        .bottom-container {
+            background-color: yellow;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            position: relative;
+            right: 204px;
         }
     </style>
 
@@ -50,25 +48,15 @@
 
 <body>
     <div class="top-container">
-        <img src="images/cloud.png" alt="cloud-img">
-        <h1> I'm webDev</h1>
-        <p>This is <span>simple</span> landing page site</p>
-        <img src="images/cloud.png" alt="cloud-img">
-        <img src="images/mountain.png" alt="mountain-img">
+        <span>top-container</span>
     </div>
 
     <div class="middle-container">
-        <p>This is <span>simple</span> landing page site</p>
-        <p class="none">This is <span>simple</span> landing page site</p>
-        <p>This is <span>simple</span> landing page site</p>
-
+        <span>middle-container</span>
     </div>
 
     <div class="bottom-container">
-        <p>This is <span>simple</span> landing page site</p>
-        <p class="hidden">This is <span>simple</span> landing page site</p>
-        <p>This is <span>simple</span> landing page site</p>
-
+        <span>bottom-container</span>
     </div>
 
 </body>
