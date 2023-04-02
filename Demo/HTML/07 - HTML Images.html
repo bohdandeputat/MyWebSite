@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="description" content="HTML Basics">
+    <meta name="keywords" content="html, webdesign">
+    <meta name="author" content="Bohdan Deputat">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Favicon in browser tabs -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <!-- Document title in browser tabs -->
+    <title>Вступ до HTML</title>
+
+    <style>
+        html {
+            padding: 0;
+        }
+
+        body {
+            margin: 5;
+            padding: 0;
+            display: grid;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+
+        header,
+        footer {
+            grid-column: 1 / 4;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        main {
+            grid-column: 1 / 3;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        section,
+
+        article,
+
+        nav {
+            margin: 5px;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Основні приклади HTML</h1>
+
+        <!-- Main navigation -->
+
+        <nav>Навігація</nav>
+
+    </header>
+
+    <!-- Main part of site -->
+    <main>
+        <!-- HTML Images -->
+        <section>
+            <h2>HTML зображення</h2>
+            <p>Використання графіки робить веб-сторінки візуально привабливими, зображення допомагають краще передати
+                суть і
+                зміст веб-документа. Також, за допомогою HTML-тегів можна робити карти-зображення з активними областями.
+            </p>
+
+            <!--HTML Images Syntax-->
+            <article>
+                <h3>Синтаксис зображень HTML</h3>
+                <p> <code>&lt;img&gt;</code> - Тег HTML використовується для вбудування зображення у веб-сторінку.</p>
+                <p> Тег <code>&lt;img&gt;</code> має два обов'язкових атрибути:<br>
+                    <code>src</code> - Вказує шлях до зображення<br>
+                    <code>alt</code>- Визначає альтернативний текст для зображенн який відображається, якщо браузер не
+                    може знайти
+                    зображення.
+                <p>
+                    <code>&lt;img src="url" alt="some_text"&gt; </code>
+                <p>Коли веб-сторінка завантажується, браузер отримує зображення з веб-сервера та вставляє його на
+                    сторінку. </p>
+                <p>Якщо зображення розташоване у підкаталозі, необхідно вказати повний шлях до папки та ім’я зображення
+                    в src атрибуті:</p>
+
+                <p>Приклад:</p>
+
+                <!--HTML Inserting Images into Web Pages-->
+                <p><em>HTML Зображення в іншій папці</em></p>
+                <img src="images/kites.jpg" alt="Flying Kites">
+
+                <!--HTML Image Size - Width and Height-->
+                <p> <em>HTML Зображення на іншому сервері / Розмір зображення - ширина та висота</em></p>
+                <p>Ви можете використовувати <code>style</code> атрибут, щоб вказати ширину та висоту зображення.<br>
+                    Крім того, ви можете використовувати атрибути <code>width</code> and <code>height</code>:
+                </p>
+                <img src="https://static.vecteezy.com/system/resources/previews/000/277/559/large_2x/sun-clipart-set-vector-illustration.jpg"
+                    alt="Sun Sky" style="width:500px;height:500px;">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/277/559/large_2x/sun-clipart-set-vector-illustration.jpg"
+                    alt="Sun Sky" style="width:300px;height:300px;">
+
+                <!--HTML Image as a Link-->
+                <p><em>HTML Зображення як посилання</em></p>
+                <p>Щоб використовувати зображення як посилання, помістіть <code>&lt;img&gt;</code> тег всередину
+                    <code>&lt;a&gt;</code> тегу:
+                </p>
+                <a href="https://www.w3schools.com/html/default.asp">
+                    <img src="images/HTML5_Logo_256.png" alt="HTML tutorial">
+                </a>
+
+            </article>
+
+        </section>
+
+        <!-- HTML <picture> Element -->
+        <section>
+            <h2>Елемент <code>&lt;picture&gt;</code> HTML</h2>
+            <p>Елемент HTML <code>&lt;picture&gt;</code> дозволяє відображати різні картинки для різних пристроїв або
+                розмірів екрану..
+            </p>
+
+            <!--HTML Picture  Syntax-->
+            <article>
+                <h3>Синтаксис <code>&lt;picture&gt;</code> HTML</h3>
+                <p> Елемент HTML <code>&lt;picture&gt;</code> надає веб-розробникам більшу гнучкість у визначенні
+                    графічних ресурсів.<br>
+                    Елемент <code>&lt;picture&gt;</code> містить один або більше <code>&lt;source&gt;</code> елементів,
+                    кожен з яких зі посиланням на різні
+                    зображення через <code>srcset</code> атрибут.
+                    Таким чином браузер може вибрати зображення, яке найкраще відповідає поточному перегляду та / або
+                    пристрою.
+                    Кожен <code>&lt;source&gt;</code> елемент має media атрибут, який визначає, коли зображення є
+                    найбільш
+                    підходящим.
+                <p>
+                <p>Приклад:</p>
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="images/logo-large.png">
+                    <source media="(max-width: 500px)" srcset="images/logo-small.png">
+                    <img src="images/logo-default.png" alt="My logo">
+                </picture>
+                <hr>
+                <p>Коли використовувати елемент зображення<br>
+                    Є дві основні цілі picture елемента:
+                <p>
+
+                <p>1. Пропускна здатність
+                    Якщо у вас невеликий екран або пристрій, не потрібно завантажувати великий файл зображення.
+                    Браузер використовуватиме перший source елемент із відповідними значеннями атрибутів та
+                    ігноруватиме будь-який з наступних елементів.</p>
+
+                <p>2. Підтримка форматування
+                    Деякі браузери або пристрої можуть підтримувати не всі формати зображень.
+                    Використовуючи picture елемент, ви можете додавати зображення всіх форматів,
+                    і браузер використовуватиме перший розпізнаний формат, а також ігноруватиме будь-який із наступних
+                    елементів.
+                </p>
+            </article>
+        </section>
+        <!-- HTML <figure> Element -->
+        <section>
+            <h2>Елемент <code>&lt;figure&gt;</code> HTML</h2>
+            <p>Елемент <code>&lt;figure&gt;</code> представляє одиницю вмісту, необов’язково із підписом, який є
+                самодостатнім і на який зазвичай посилаються як на єдиний блок. Зазвичай це зображення, ілюстрація,
+                діаграма або фрагмент коду, на які є посилання в основному тексті.</p>
+
+            <!--HTML <figure>  Syntax-->
+            <article>
+                <h3>Синтаксис <code>&lt;figure&gt;</code> HTML</h3>
+                <p>Елемент HTML <code>&lt;figure&gt;</code> визначає самодостатній вміст, як-от ілюстрації, діаграми,
+                    фотографії, переліки кодів тощо.<br>
+                    Елемент <code>&lt;figcaption&gt;</code> використовується для додавання підпису для
+                    <code>&lt;figure&gt;</code> елемента.
+                </p>
+
+                <p>
+                <p>Приклад:</p>
+                <!-- Image with semantic description -->
+                <figure>
+                    <img src="images/discovery.jpg" alt="Space Shuttle" />
+                    <figcaption>Це простий опис до зображення. NASA - Space Shuttle Discovery</figcaption>
+                </figure>
+
+                <!-- Images with semantic description -->
+                <figure>
+                    <img src="images/kites.jpg" alt="Flying Kites">
+                    <img src="images/sky.jpg" alt="Cloudy Sky">
+                    <img src="images/ballons.jpg" alt="Hot Air Ballons">
+                    <figcaption>
+                        <p>Це простий опис до кількох фотографій огорнутих одним елементом <code>&lt;figure&gt;</code> .
+                        </p>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <!-- HTML Image Maps -->
+        <section>
+            <h2>Карти зображень HTML </h2>
+            <p>За допомогою карт зображень HTML ви можете створювати зони, на які можна натискати. </p>
+            <a href="https://www.w3schools.com/html/html_images_imagemap.asp">Детальніше про карти зображень HTML</a>>
+
+            <!--HTML Image Maps Syntax-->
+            <article>
+                <h3>Карти зображень</h3>
+                <p>Тег HTML <code>&lt;map&gt; </code> визначає карту зображень. Карта зображень - це зображення із
+                    клікабельними областями. <br>
+                    Області визначаються одним або кількома тегами <code>&lt;area&gt;</code>.
+                <p>
+                <p>Карта зображень дозволяє визначити точки доступу на зображенні, яке діє так само, як гіперпосилання.
+                    Основна ідея створення карти зображень полягає у забезпеченні простого способу зв’язування різних
+                    частин
+                    зображення без розділення його на окремі файли зображень. <br>
+                    Наприклад, на карті світу кожна країна може мати гіперпосилання на додаткову інформацію про цю
+                    країну.</p>
+                <p>Приклад:</p>
+                <figure>
+                    <img src="images/objects.png" usemap="#objects" alt="Objects">
+                    <map name="objects">
+                        <area shape="circle" coords="137,231,71" href="source/clock Image.html" alt="Clock">
+                        <area shape="poly" coords="363,146,273,302,452,300" href="source/sign Image.html" alt="Sign">
+                        <area shape="rect" coords="520,160,641,302" href="source/book Image.html" alt="Book">
+                    </map>
+                    <figcaption>Для створення карти зображень вам потрібно зображення та деякий HTML-код, який описує
+                        області, на які
+                        можна натиснути.</figcaption>
+                </figure>
+                <hr>
+                <p>
+                    <em>Форма області</em> <br>
+                    Ви повинні визначити форму області, на яку можна натиснути, і ви можете вибрати одне з таких
+                    значень: <br>
+
+                    <code>rect</code> - визначає прямокутну область; <br>
+                    <code>circle</code> - визначає кругову область; <br>
+                    <code>poly</code> - визначає полігональну область; <br>
+                    <code>default</code> - визначає весь регіон; <br>
+
+                    Ви також повинні визначити деякі координати, щоб можна було розмістити область,
+                    на яку можна натиснути, на зображенні.
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Aditional information -->
+    <aside></aside>
+
+    <!-- Footer -->
+    <footer></footer>
+</body>
+
+</html>
