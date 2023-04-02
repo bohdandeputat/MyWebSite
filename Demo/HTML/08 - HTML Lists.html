@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Specifies the character encoding for the HTML document-->
+    <meta charset="UTF-8">
+
+    <!-- SEO -->
+    <meta name="description" content="HTML Basics">
+    <meta name="keywords" content="html, webdesign">
+    <meta name="author" content="Bohdan Deputat">
+    <meta name="robots" content="index, nofollow">
+
+    <!-- Use latest version of IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- For mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Favicon in browser tabs -->
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+    <!-- Document title in browser tabs -->
+    <title>Вступ до HTML</title>
+
+    <style>
+        html {
+            padding: 0;
+        }
+
+        body {
+            margin: 5;
+            padding: 0;
+            display: grid;
+            font-size: 16px;
+            color: rgb(0, 0, 0);
+        }
+
+        header,
+        footer {
+            grid-column: 1 / 4;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        main {
+            grid-column: 1 / 3;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+
+        section,
+
+        article,
+
+        nav {
+            margin: 5px;
+            border: 1px dashed #000;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Основні приклади HTML</h1>
+
+        <!-- Main navigation -->
+
+        <nav>Навігація</nav>
+
+    </header>
+
+    <!-- Main part of site -->
+    <main>
+        <!-- Independent block -->
+        <!-- HTML Lists -->
+        <section>
+            <h2>Списки HTML</h2>
+            <p>Списки HTML використовуються для подання переліку інформації в чітко сформованому та семантичному
+                вигляді.</p>
+
+            <p>У HTML є три різні типи списків, і кожен із них має певне призначення та значення.</p>
+            <p><strong>Невпорядкований список</strong> - використовується для створення списку пов’язаних елементів без
+                певного порядку. </p>
+            <p><strong>Впорядкований список</strong> - використовується для створення списку пов’язаних елементів у
+                певному
+                порядку. </p>
+            <p><strong>Список описів</strong> - використовується для створення списку термінів та їх описів. </p>
+
+                <!--HTML Unordered List-->
+                <article>
+                <h3>Невпорядкований список HTML</h3>
+                <p>Невпорядкований список починається з тегу <code>&lt;ul&gt;</code>. <br>
+                    Кожен елемент списку починається з тегу <code>&lt;li&gt;</code>.<br>
+                    Елементи списку за замовчуванням будуть позначені маркерами.
+                </p>
+                <p>Приклад:</p>
+                <ul>
+                    <li> Шоколадний торт </li>
+                    <li> Шварцвальдський торт </li>
+                    <li> Ананасовий торт </li>
+                </ul>
+            </article>
+            <article>
+                <h3>Вкладений невпорядкований список HTML</h3>
+
+                <p>Створення списоку всередині списку (вкладений списоку).</p>
+                <p>Ви також можете змінити тип маркера у своєму невпорядкованому списку за допомогою властивості типу
+                    CSS <code> list-style</code>.<br>
+                </p>
+                <pre>
+                    <code>
+                      ul {
+                        list-style-type: square;    
+                        }
+                    </code>
+                </pre>
+                <p>Приклад:</p>
+
+                <ul>
+                    <li> Шоколадний торт
+                        <ul>
+                            <li> Шоколадний оксамитовий торт </li>
+                            <li> Шоколадний лавовий торт </li>
+                        </ul>
+                    </li>
+                    <li> Шварцвальдський торт </li>
+                    <li> Ананасовий торт </li>
+                </ul>
+                <em>Наступне правило стилю змінює тип маркера з диска за замовчуванням на квадратний:</em>
+                <ul>
+                    <li> Шоколадний торт
+                        <ul style="list-style-type:square;">
+                            <li> Шоколадний оксамитовий торт </li>
+                            <li> Шоколадний лавовий торт </li>
+                        </ul>
+                    </li>
+                    <li> Шварцвальдський торт </li>
+                    <li> Ананасовий торт </li>
+                </ul>
+            </article>
+        </section>
+
+
+
+    </main>
+
+    <!-- Aditional information -->
+    <aside></aside>
+
+    <!-- Footer -->
+    <footer></footer>
+</body>
+
+</html>
