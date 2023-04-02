@@ -298,7 +298,6 @@
 
       <!--HTML Input Type - Select Multiple Boxes-->
       <article>
-
         <h3>Список із множинним вибором (multiple):</h3>
         <code>&lt;select multiple&gt;</code>
         <p>
@@ -352,7 +351,48 @@
       </article>
     </section>
 
+    <!--HTML Form - Form Controls-->
+    <section>
+      <h2>Керування формою</h2>
 
+      <!--HTML Form - The form method Attribute-->
+      <article>
+        <h3>Атрибут formmethod:</h3>
+        <p>Вхідний formmethod атрибут визначає метод HTTP для надсилання даних форми на URL-адресу дії.</p>
+        <p>Дані форми можуть бути надіслані як змінні URL-адреси (method = "get") або як транзакція повідомлення
+          HTTP
+          (method = "post").</p>
+        <dl>
+          <dt>
+            Примітки щодо методу "отримати" <code> (method = "get")</code>:
+          </dt>
+          <dd>
+          <dd>Цей метод додає дані форми до URL-адреси в парах ім’я / значення </dd>
+          <dd>Цей метод корисний для подання форми, коли користувач хоче додати результат до закладки</dd>
+          <dd>Існує обмеження кількості даних, які ви можете розмістити в URL-адресі (залежить від браузера),
+            тому ви не
+            можете бути впевнені, що всі дані форми будуть передані правильно</dd>
+          <dd>Ніколи не використовуйте метод "get" для передачі конфіденційної інформації! (пароль або інша
+            конфіденційна інформація буде видно в адресному рядку браузера) </dd>
+          <dt>Примітки щодо методу "розміщення" <code>(method = "post")</code>:</dt>
+          <dd> Цей метод передає дані форми як транзакцію після HTTP</dd>
+          <dd> Надіслані форми методом "опублікувати" не можна додавати в закладки</dd>
+          <dd> Метод "post" є надійнішим та безпечнішим, ніж "get", а "post" не має обмежень щодо розміру</dd>
+        </dl>
+
+        <p>Приклад:</p>
+        <form action="https://www.w3schools.com/action_page.php" method="get" target="_blank">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="submit" value="Submit using GET">
+          <input type="submit" formmethod="post" value="Submit using POST">
+        </form>
+        </form>
+        </p>
+      </article>
+    </section>
 
 
   </main>
