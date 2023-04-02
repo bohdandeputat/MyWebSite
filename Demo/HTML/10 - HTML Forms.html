@@ -392,6 +392,43 @@
         </form>
         </p>
       </article>
+
+
+      <!--HTML Form - Grouping Form Controls (fieldset)-->
+      <article>
+        <h3>Групування елементів керування формою <code>&lt;fieldset&gt;</code>:</h3>
+        <p>
+          Ви також групуєте логічно пов'язані елементи керування та мітки у веб-формі, використовуючи елемент
+          <code>&lt;legend&gt;</code>. <br>
+          Групування елементів керування формою за категоріями полегшує користувачам пошук елемента керування, що робить
+          форму більш зручною для користувача.
+        </p>
+        <p>Приклад:</p>
+        <form>
+          <fieldset>
+            <legend>Name</legend>
+            <label>Firstname: <input type="text" name="firstname"></label>
+            <label>Lastname: <input type="text" name="lastname"></label>
+          </fieldset>
+          <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="male"> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </fieldset>
+          <fieldset>
+            <legend>Hobbies</legend>
+            <label><input type="checkbox" name="hobbies" value="soccer"> Soccer</label>
+            <label><input type="checkbox" name="hobbies" value="cricket"> Cricket</label>
+            <label><input type="checkbox" name="hobbies" value="baseball"> Baseball</label>
+          </fieldset>
+          <fieldset>
+            <legend>Contact Details</legend>
+            <label>Email Address: <input type="email" name="email"></label>
+            <label>Phone Number: <input type="text" name="phone"></label>
+          </fieldset>
+        </form>
+        </p>
+      </article>
     </section>
 
 
