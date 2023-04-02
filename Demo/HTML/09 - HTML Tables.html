@@ -80,6 +80,29 @@
         th {
             text-align: left;
         }
+
+
+        /*A Special Style for One Table */
+        table.secondary caption {
+            caption-side: bottom;
+        }
+
+        #t01 {
+            width: 100%;
+        }
+
+        #t01 tr:nth-child(even) {
+            background-color: lightpink;
+        }
+
+        #t01 tr:nth-child(odd) {
+            background-color: lightblue;
+        }
+
+        #t01 th {
+            background-color: gray;
+            color: white;
+        }
     </style>
 </head>
 
@@ -323,7 +346,7 @@
             <p>Додавання підписів до таблиць</p>
             <p>Визначення верхнього, основного та нижнього колонтитулів таблиці</p>
 
-        <!-- HTML Table - Captions, Header, Body, and Footer -->
+            <!-- HTML Table - Captions, Header, Body, and Footer -->
             <article>
                 <p>Ви можете вказати підпис (або заголовок) для своїх таблиць за допомогою елемента
                     <code>&lt;caption&gt;</code>.<br>
@@ -364,6 +387,49 @@
                         <tr>
                             <th>Total</th>
                             <td>12,000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </article>
+
+            <!-- HTML Table - Individual table Styling -->
+            <article>
+                <h3>Таблиця HTML - Особливий стиль для окремої таблиці</h3>
+                <p>Щоб визначити спеціальний стиль для однієї конкретної таблиці, додайте до неї id атрибут:
+                </p>
+                <p>Приклад:</p>
+                <table id="t01" class="secondary">
+                    <caption>Users Info</caption>
+                    <thead>
+                        <tr>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Age</th>
+                        </tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jill</td>
+                            <td>Smith</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Eve</td>
+                            <td>Jackson</td>
+                            <td>94</td>
+                        </tr>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>80</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="2">Average</th>
+                            <th>75</th>
                         </tr>
                     </tfoot>
                 </table>
