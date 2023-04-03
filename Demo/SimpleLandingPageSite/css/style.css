@@ -6,28 +6,87 @@ https://www.w3schools.com/css/css_font.asp */
 
 body {
     text-align: center;
-    font-family: 'Merriweather',serif;
+    font-family: 'Merriweather', serif;
 }
 
 h1 {
     color: #66BFBF;
     font-family: 'Sacramento', cursive;
-    font-size: 5.625rem;
+    font-size: 7rem;
     line-height: 2;
 }
+
 h2 {
-    color:#66BFBF;
+    color: #66BFBF;
     font-size: 2.5rem;
     font-weight: normal;
 }
 
-h3, a {
+h3,
+a {
     color: #11999E;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
+
+
+.headder-img-top {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    width: 7%;
+}
+
+.headder-img-center {
+    width: 40%;
+}
+
+.headder-img-bottom {
+    left: 20%;
+    position: absolute;
+    top: 5%;
+    width: 7%;
+}
+
+.profile-img {
+    width: 15%;
+}
+
+.skill-row {
+    width: 50%;
+    text-align: left;
+    margin: 100px auto 100px auto;
+}
+
+.design-img {
+    float: left;
+    margin-right: 30px;
+    width: 30%;
+}
+
+.develop-img {
+    float: right;
+    margin-left: 30px;
+    width: 30%;
+}
+.contact-me {
+margin-top: 100px;
+}
+.clear{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,26 +97,6 @@ h2, h3 {
 }
 
 .top-container p {
-width: 15%;
-margin: 0 auto;
+    width: 15%;
+    margin: 0 auto;
 }
-
-.headder-img-top{
-    position: absolute;
-    top: 5%;
-    right: 20%;
-}
-
-.headder-img-bottom{
-    position: absolute;
-    top: 5%;
-    left: 20%;
-}
-
-/*
-.middle-container,
-.bottom-container {
-    display: none;
-}
-*/
-
