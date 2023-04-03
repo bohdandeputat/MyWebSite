@@ -1,5 +1,28 @@
 @import url(reset.css);
 
-div {
+.top-container {
     background-color: #F6F5F5;
+    padding-top: 100px;
+    position: relative;
+    text-align: center;
+}
+.top-container p {
+width: 15%;
+margin: 0 auto;
+}
+
+.headder-img-top{
+    position: absolute;
+    top: 5%;
+    right: 20%;
+}
+.headder-img-bottom{
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+}
+
+.middle-container,
+.bottom-container {
+    display: none;
 }
