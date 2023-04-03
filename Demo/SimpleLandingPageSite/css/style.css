@@ -36,12 +36,14 @@ margin: 0 auto;
 
 .headder-img-bottom{
     position: absolute;
-    bottom: 50%;
+    top: 5%;
     left: 20%;
 }
 
+/*
 .middle-container,
 .bottom-container {
     display: none;
 }
+*/
 
