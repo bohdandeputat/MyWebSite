@@ -1,11 +1,28 @@
 @import url(reset.css);
 
+/* Fonts Google -->
+https://www.w3schools.com/css/css_font.asp */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
+
+body {
+    font-family: 'Merriweather',serif;
+}
+
+h1 {
+    font-family: 'Sacramento', cursive;
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .top-container {
     background-color: #F6F5F5;
     padding-top: 100px;
     position: relative;
     text-align: center;
 }
+
 .top-container p {
 width: 15%;
 margin: 0 auto;
@@ -16,6 +33,7 @@ margin: 0 auto;
     top: 5%;
     right: 20%;
 }
+
 .headder-img-bottom{
     position: absolute;
     bottom: 50%;
@@ -26,3 +44,4 @@ margin: 0 auto;
 .bottom-container {
     display: none;
 }
+
