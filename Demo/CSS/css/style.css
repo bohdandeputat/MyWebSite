@@ -33,4 +33,11 @@ body {
     padding: 5px;
   }
 
-  /*Anchor Pseudo-classes*/
+  /*CSS Specificity*/
+  
+  p {color: rgb(0, 0, 0);}
+
+  .test {color: green;}
+  .test1 {font-size: 32px;}
+
+  #demo {color: blue;}
