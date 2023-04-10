@@ -1,0 +1,221 @@
+@import url(reset.css);
+
+/* Fonts Google -->
+https://www.w3schools.com/css/css_font.asp */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap');
+
+/*Elements*/
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 30px;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    color: #40514E;
+    text-align: center;
+}
+
+h1 {
+    color: #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 7rem;
+    line-height: 2;
+}
+
+h2 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+hr {
+    border: #EAF6F6 dotted 12px;
+    border-bottom: none;
+    width: 10%;
+    margin: 100px auto 100px;
+}
+
+p {
+    line-height: 2;
+}
+
+/*Classes*/
+
+/* Top Section*/
+
+.top-container {
+    background-color: #EAF6F6;
+    padding-top: 50px;
+    position: relative;
+
+}
+
+.main-menu ul {
+    list-style: none;
+
+    margin: 0 auto 30px auto;
+    text-align: left;
+    position: fixed;
+    left: 5%;
+    top: 2%;
+
+
+}
+
+
+.main-menu a:hover {color: #F58262;}
+
+
+
+.headder-img-top {
+    position: fixed;
+    width: 5%;
+    top: 2%;
+    left: 2%;
+
+}
+
+
+.headder-img-center {
+    width: 50%;
+}
+
+
+
+.top-container h2 {
+    width: 30%;
+    margin: 20px auto;
+}
+
+
+/* Main Section*/
+
+.intro {
+    width: 30%;
+    margin: 50px auto 20px;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.profile-img {
+    width: 15%;
+}
+
+
+.skill-row {
+    width: 50%;
+    text-align: left;
+    margin: 50px auto 50px auto;
+}
+
+.skill-img {
+    width: 25%;
+}
+
+.text-right {
+    float: right;
+    width: 70%;
+}
+
+.text-left {
+    float: left;
+    width: 70%;
+}
+
+.contact-me {
+    margin-top: 50px;
+}
+.contact-message {
+    width: 40%;
+    margin: 30px auto 20px;
+}
+/*
+
+
+.design-img {
+    position: absolute;
+    width: 30%;
+    left: 0px;
+}
+
+.design-img~p,
+.design-img~h3 {
+    position: relative;
+    left: 35%;
+}
+
+.develop-img {
+    position: relative;
+    width: 30%;
+    right: 0px;
+}
+
+.develop-img~p,
+.develop-img~h3 {
+    position: relative;
+    right: 35%;
+}
+*/
+
+/*
+}
+*/
+
+
+/* CONTACT ME */
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+
+/* Fotter Section*/
+
+
+.bottom-container {
+    background-color: #66BFBF;
+    margin: 30px auto auto;
+    padding: 30px;
+
+}
+
+.bottom-container p {
+    color: #EAF6F6;
+}
