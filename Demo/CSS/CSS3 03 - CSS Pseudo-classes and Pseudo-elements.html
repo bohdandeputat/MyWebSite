@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до CSS3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади CSS3</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- What is CSS? -->
+    <section>
+      <h2>Що таке Псевдоклас?</h2>
+      <p>
+        Псевдокласи CSS дозволяють стилізувати динамічні стани елемента, такі як наведення курсора, активний стан і стан
+        фокусу, а також елементи, які існують у дереві документа, але не можуть бути націлені за допомогою інших
+        селекторів без додавання будь-яких Ідентифікатори або класи для них, наприклад, націлені на перший або останній
+        дочірній елемент.
+      </p>
+      <ul>
+        <li>Стилізуйте елемент, коли користувач наводить на нього мишу</li>
+        <li>По-різному стилізуйте відвідані та невідвідані посилання</li>
+        <li>Стилізуйте елемент, коли він отримує фокус</li>
+      </ul>
+
+      <p>
+        Псевдоклас починається з двокрапки ( :). Його синтаксис можна подати за допомогою:
+      </p>
+      <p><code>*selector:pseudo-class { властивість : значення ; }</code></p>
+
+      <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-pseudo-classes.php" target="_blank">CSS
+          Pseudo-classes</a></q>
+      <q><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">CSS Pseudo-classes</a></q>
+
+      <!-- Anchor Pseudo-classes -->
+      <article>
+        <h3>Якірні псевдокласи</h3>
+        <p>За допомогою прив’язки псевдокласів посилання можуть відображатися різними способами:
+        </p>
+
+        <p>Приклад:</p>
+        <!-- Anchor Pseudo-classes -->
+        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
+          стилізації є видалення підкреслень із відвіданих посилань.
+        </p>
+        <p><code>a:link {
+          color: blue;
+          }
+          <br>
+          a:visited {
+          text-decoration: none;
+          }</code></p>
+
+        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
+          стилізації є видалення підкреслень із відвіданих посилань.
+        </p>
+        <p><code>
+            a:hover {
+              color: red;
+            }<br>
+          a:active {
+              color: gray;
+          } <br>
+          
+          a:focus {
+              color: yellow;
+          }
+
+          </code></p>
+      </article>
+
+    </section>
+
+
+
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>
