@@ -41,3 +41,22 @@ body {
   .test1 {font-size: 32px;}
 
   #demo {color: blue;}
+
+
+  /*CSS The !important Rule*/
+
+  #myid {
+    background-color: blue;
+  }
+  
+  .myclass {
+    background-color: gray;
+  }
+
+  p {
+    background-color: red !important;
+  }
+
+  p {
+    background-color: rgb(230, 230, 245) !important;
+  }
