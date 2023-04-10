@@ -50,19 +50,19 @@
         Якщо є два або більше правил CSS, які вказують на той самий елемент, селектор із найвищим значенням
         специфічності «переможе», а його оголошення стилю буде застосовано до цього елемента HTML. <br>
 
-        
+
       </p>
 
 
-      
+
       <q><a href="https://www.w3schools.com/css/css_specificity.asp" target="_blank">CSS Specificity</a></q>
-      
+
       <!-- CSS Specificity -->
       <article>
         <h3>Специфічність CSS</h3>
         <p>
           Подумайте про специфічність як про оцінку/ранг, що визначає, яке оголошення стилю в кінцевому підсумку буде
-          застосовано до елемента.  
+          застосовано до елемента.
         </p>
 
         <p>Приклад:</p>
@@ -71,7 +71,7 @@
           текст буде зеленим (хоча ми вказали червоний колір для селектора елемента "p"). Це пояснюється тим, що
           селектору класу надається вищий пріоритет:</p>
         <p>
-          <pre>
+        <pre>
           <code>
           .test {color: green;}
           p {color: red;}
@@ -85,6 +85,51 @@
         <p id="demo" class="test">Hello World demo!</p>
 
         <p id="demo" class="test test1">Hello World demo!</p>
+
+      </article>
+
+      <!-- CSS Specificity -->
+      <article>
+        <h3>CSS Правило !important</h3>
+        <p>
+          Правило !importantв CSS використовується, щоб додати властивості/значенню більшої важливості, ніж зазвичай.
+
+          Насправді, якщо ви використовуєте !importantправило, воно замінить УСІ попередні правила стилю для цієї
+          конкретної властивості цього елемента!
+
+
+        </p>
+
+        <p>Приклад:</p>
+        <!-- CSS !important -->
+        <p> У прикладі вище. усі три абзаци отримають червоний фоновий колір, навіть якщо селектор ідентифікатора та
+          селектор класу мають вищу специфічність. Правило !importantперекриває background-colorвластивість в обох
+          випадках.
+
+        <p>
+        <pre>
+          <code>
+          #myid {
+            background-color: blue;
+          }
+
+           .myclass {
+            background-color: gray;
+          }
+
+          p {
+            color: red; !important
+          }
+        </code>
+      </pre>
+        </p>
+
+
+        <p>This is some text in a paragraph.</p>
+
+        <p class="myclass">This is some text in a paragraph.</p>
+
+        <p id="myid">This is some text in a paragraph.</p>
 
       </article>
 
