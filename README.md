@@ -28,3 +28,4 @@
 - [#01 - Синтаксис CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.01-Basic-Template)
 - [#02 - Селектор CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.02-CSS-Selectors)
 - [#03 - Псевдокласи та Псевдоелементи CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.03-CSS-Pseudo-classes-and-Pseudo-elements)
+- [#04 - Специфічність CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.04-CSS-Specificity)
