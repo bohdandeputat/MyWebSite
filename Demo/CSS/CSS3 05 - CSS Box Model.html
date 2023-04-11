@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до CSS3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади CSS3</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- CSS Box Model -->
+    <section>
+      <h2>Що таке специфічність?</h2>
+      <p>
+        Якщо є два або більше правил CSS, які вказують на той самий елемент, селектор із найвищим значенням
+        специфічності «переможе», а його оголошення стилю буде застосовано до цього елемента HTML. <br>
+
+
+      </p>
+      <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-box-model.php" target="_blank">CSS Box Model</a></q>
+
+      <!-- What is Box Model? -->
+      <article>
+        <h3>Що таке Box Model?</h3>
+        <p>
+          Кожен елемент, який можна відобразити на веб-сторінці, складається з одного або кількох прямокутних блоків.
+          Модель поля CSS зазвичай описує, як ці прямокутні поля розташовані на веб-сторінці. Ці блоки можуть мати різні
+          властивості та можуть взаємодіяти один з одним по-різному, але кожен блок має область вмісту та необов’язкові
+          оточуючі області відступу , кордону та полів .
+        </p>
+        <figure>
+          <img src="images/05-css-box-model.png" alt="CSS Box Model">
+          <figcaption>Блокова модель дозволяє додавати межі навколо елементів і визначати простір між елементами.
+          </figcaption>
+        </figure>
+
+        <!-- CThe CSS Box Model -->
+        <p>Приклад:</p>
+        <p> Пояснення різних частин: </p>
+        <ul>
+          <li><em>Content (Вміст)</em> – вміст поля, де з’являються текст і зображення;</li>
+          <li><em>Padding (Внутрішній відступ)</em> – очищає область навколо вмісту. Прозоре поле;</li>
+          <li><em>Border (Рамка)</em> – межа, що охоплює відступи та вміст;</li>
+          <li><em>Margin (Зовнішній відступ)</em> – очищає область за межами. Прозоре поле;</li>
+        </ul>
+        <p>Демонстрація моделі за допомогою CSS:</p>
+        <pre>
+          <code>
+            div {
+              width: 50px;
+              height: 50px;
+              border: 10px dotted magenta;
+              padding: 50px;
+              margin: 50px 60px 40px 30px;
+            }
+        </code>
+        </pre>
+        <div class="outerbox">
+          <div class="innerbox">
+            Example Content
+          </div>
+        </div>
+      </article>
+
+
+
+    </section>
+
+
+
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>
