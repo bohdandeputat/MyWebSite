@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до CSS3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади CSS3</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- CSS Box Model -->
+    <section>
+      <h2>Що таке специфічність?</h2>
+      <p>
+        Якщо є два або більше правил CSS, які вказують на той самий елемент, селектор із найвищим значенням
+        специфічності «переможе», а його оголошення стилю буде застосовано до цього елемента HTML. <br>
+
+
+      </p>
+      <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-box-model.php" target="_blank">CSS Box Model</a></q>
+
+      <!-- What is Box Model? -->
+      <article>
+        <h3>Що таке Box Model?</h3>
+        <p>
+          Кожен елемент, який можна відобразити на веб-сторінці, складається з одного або кількох прямокутних блоків.
+          Модель поля CSS зазвичай описує, як ці прямокутні поля розташовані на веб-сторінці. Ці блоки можуть мати різні
+          властивості та можуть взаємодіяти один з одним по-різному, але кожен блок має область вмісту та необов’язкові
+          оточуючі області відступу , кордону та полів .
+        </p>
+        <figure>
+          <img src="images/05-css-box-model.png" alt="CSS Box Model">
+          <figcaption>Блокова модель дозволяє додавати межі навколо елементів і визначати простір між елементами.
+          </figcaption>
+        </figure>
+
+        <!-- CThe CSS Box Model -->
+        <p>Приклад:</p>
+        <p> Пояснення різних частин: </p>
+        <ul>
+          <li><em>Content (Вміст)</em> – вміст поля, де з’являються текст і зображення;</li>
+          <li><em>Padding (Внутрішній відступ)</em> – очищає область навколо вмісту. Прозоре поле;</li>
+          <li><em>Border (Рамка)</em> – межа, що охоплює відступи та вміст;</li>
+          <li><em>Margin (Зовнішній відступ)</em> – очищає область за межами. Прозоре поле;</li>
+        </ul>
+        <p>Демонстрація моделі за допомогою CSS:</p>
+        <pre>
+          <code>
+            div {
+              width: 50px;
+              height: 50px;
+              border: 10px dotted magenta;
+              padding: 50px;
+              margin: 50px 60px 40px 30px;
+            }
+        </code>
+        </pre>
+        <div class="outerbox">
+          <div class="innerbox">
+            Example Content
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Width and Height of an Element -->
+      <article>
+        <h3>Ширина і висота елемента</h3>
+        <p>
+          Щоб правильно встановити ширину і висоту елемента у всіх браузерах, потрібно знати, як працює блокову модель.
+        </p>
+        <p>
+          <em>Важливо:</em> коли ви встановлюєте властивості ширини та висоти елемента за допомогою CSS, ви просто
+          встановлюєте ширину та висоту області вмісту . Щоб обчислити повний розмір елемента, ви також повинні додати
+          відступи, рамки та поля.
+        </p>
+        <!-- Width and Height of an Element -->
+        <p>Приклад:</p>
+        <p> Цей елемент <code>&ltdiv&gt;</code> матиме загальну ширину 350 пікселів: </p>
+        <p>Ось розрахунок:</p>
+
+        <ul>
+          <li>
+            120 пікселів (ширина)
+          </li>
+          <li>
+            + 20 пікселів (лівий + правий відступ)
+          </li>
+          <li>
+            + 10 пікселів (ліва + права межа)
+          </li>
+          <li>
+            + 0 пікселів (ліве + праве поле)
+          </li>
+          <li>
+            = <strong>150 пікселів</strong>
+          </li>
+        </ul>
+        <p>Демонстрація моделі за допомогою CSS:</p>
+        <pre>
+          <code>
+            div {
+              width: 120px;
+              padding: 10px;
+              border: 5px solid gray;
+              margin: 0;
+            }
+        </code>
+        </pre>
+        <div class="outerbox">
+          <div class="WH">
+            Example Content
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Min Max Width and Height of an Element -->
+      <article>
+        <h3>Максимальна (мінімальна) Ширина і висота елемента</h3>
+        <p>
+          Щоб правильно встановити максимальну (мінімальну) ширину і висоту елемента
+          до відповідних тегів додають префікси <code>max-</code> (<code>min-</code> ).
+        </p>
+                <!-- Width and Height of an Element -->
+        <p>Приклад:</p>
+        <ul>
+          <li>
+            max-height - задає максимальну висоту елемента
+          </li>
+          <li>
+            max-width - Задає максимальну ширину елемента
+          </li>
+          <li>
+            min-height - Задає мінімальну висоту елемента
+          </li>
+          <li>
+            min-width - Задає мінімальну ширину елемента
+          </li>
+          
+        </ul>
+        <p>Демонстрація моделі за допомогою CSS:</p>
+        <pre>
+                <code>
+                  div {
+                    min-width: 150px;
+                    max-width: 220px;
+                    min-height: 150px;
+                    max-height: 220px;  
+                    padding: 10px;
+                    border: 5px dotted red;
+                    margin: auto;
+                  }
+              </code>
+              </pre>
+        <div class="outerbox">
+          <div class="mWmH">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, quibusdam provident. Veniam architecto fugit quibusdam voluptatem eaque repudiandae error, labore non vitae nisi. Sequi laudantium, consectetur deserunt quibusdam id alias.
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+
+
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>
