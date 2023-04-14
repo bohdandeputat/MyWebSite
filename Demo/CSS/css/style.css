@@ -31,53 +31,12 @@ nav {
   padding: 5px;
 }
 
-/*CSS Display Property*/
+/*CSS Position*/
 
-/*Display Block*/
-.DisplayBlock {
-  display: block;
-  background: yellowgreen;
-  border: solid 2px grey;
-  margin: 10px;
+/*position: static*/
+div.static {
+  position: static;
+  border: 3px solid #73AD21;
 }
 
-/*Display Inline*/
-p.DisplayInline {
-  display: inline;
-  background: orange;
-  border: solid 2px red;
-  margin: 10px;
-}
-
-p.DisplayInline+ul li {
-  display: inline;
-  background: orange;
-  border: solid 2px red;
-  padding: 10px;
-  margin: 5px;
-}
-
-/*Display Inline-Block*/
-div.DisplayInlineBlock {
-  display: inline-block;
-  background: #90EE90;
-  padding: 10px;
-  border: 1px dotted blue;
-}
-
-span.DisplayInlineBlock {
-  border: 2px dotted brown;
-  display: inline-block;
-  background: #F08080;
-  max-width: 100px;
-  padding: 10px;
-}
-
-/*Display:None  or Visibility: hidden*/
-span.DisplayHidden {
-  visibility: hidden;
-}
-
-span.DisplayNone {
-  display: none;
-}
+/*position: relative*/

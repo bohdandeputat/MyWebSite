@@ -31,3 +31,4 @@
 - [#04 - Специфічність CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.04-CSS-Specificity)
 - [#05 - Блокова модель CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.05-CSS-Box-Model)
 - [#06 - Властивість Display CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.06-CSS-Display)
+- [#07 - Позиціонування CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.07-CSS-Position)
