@@ -214,6 +214,37 @@
         </div>
       </article>
 
+      <!-- Hide an Element - display:none or visibility:hidden? -->
+      <article>
+        <h3>Приховати елемент - display:none або visibility:hidden?</h3>
+        <p> 
+          Приховати елемент можна, встановивши displayдля властивості none. Елемент буде приховано, а сторінка відображатиметься так, ніби елемента там немає:        <p>
+            visibility:hidden;також приховує елемент.
+
+            Однак елемент займатиме стільки ж місця, скільки й раніше. Елемент буде приховано, але все одно вплине на макет:        <p>Приклади:</p>
+        <pre>
+          <code>
+            div {
+                visibility: hidden;
+            }
+            span {
+                display: none;
+            }
+          </code>
+        </pre>                
+
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock"> Display None or Hide 1 </span>
+          <span class="DisplayInlineBlock DisplayHidden"> Display None or Hide 2 </span>
+          <span class="DisplayInlineBlock"> Display None or Hide 3 </span>
+        </div>
+
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock"> Display None or Hide 1 </span>
+          <span class="DisplayInlineBlock DisplayNone"> Display None or Hide 2 </span>
+          <span class="DisplayInlineBlock"> Display None or Hide 3 </span>
+        </div>
+      </article>      
     </section>
 
 

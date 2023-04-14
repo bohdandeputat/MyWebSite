@@ -72,3 +72,12 @@ span.DisplayInlineBlock {
   max-width: 100px;
   padding: 10px;
 }
+
+/*Display:None  or Visibility: hidden*/
+span.DisplayHidden {
+  visibility: hidden;
+}
+
+span.DisplayNone {
+  display: none;
+}
