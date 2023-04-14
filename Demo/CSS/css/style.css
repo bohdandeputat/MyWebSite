@@ -39,3 +39,17 @@ nav {
   border: solid 2px grey;
   margin: 10px;
 }
+
+p.DisplayInline {
+  display: inline;
+  background: orange;
+  border: solid 2px red;
+  margin: 10px;
+}
+p.DisplayInline + ul li{
+  display: inline;
+  background: orange;
+  border: solid 2px red;
+  padding: 10px;
+  margin: 5px;
+}

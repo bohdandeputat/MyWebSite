@@ -111,14 +111,16 @@
       <article>
         <h3>Дисплей Block</h3>
         <p> Перевизначення стандартного відображуваного Inline елемента <code>Display: Block</code></p>
-          <p>Вбудований елемент не починається з нового рядка і займає лише необхідну ширину.</p>
-          <p>Inline elements:</p>
-          <ul>
-            <li>&lt;span&gt;</li>
-            <li>&lt;a&gt;</li>
-            <li>&lt;img&gt;</li>
-          </ul>
-          <pre>
+        <p>Вбудований елемент не починається з нового рядка і займає лише необхідну ширину.</p>
+        <p>Inline elements:</p>
+        <ul>
+          <li>&lt;span&gt;</li>
+          <li>&lt;a&gt;</li>
+          <li>&lt;img&gt;</li>
+        </ul>
+
+        <p>Приклади:</p>
+        <pre>
           <code>
           span {
               display: block;
@@ -130,11 +132,54 @@
           </code>
           </pre>
 
-          <p>
-            <span class="DisplayBlock">Lorem ipsum, dolor sit amet consectetur</span> adipisicing elit. Hic sed nihil odit in distinctio quas voluptatibus, minima, facilis blanditiis amet illo dolores reprehenderit tempore deserunt eligendi excepturi. Corrupti, consectetur ut!
-          </p>
-          <img class ="DisplayBlock" src="images/flowlayout/FL00.png" alt="DisplayBlock">
-          <a class="DisplayBlock" href="google.com">Google</a>
+
+        <p>
+          <span class="DisplayBlock">Lorem ipsum, dolor sit amet consectetur</span> adipisicing elit. Hic sed nihil odit
+          in distinctio quas voluptatibus, minima, facilis blanditiis amet illo dolores reprehenderit tempore deserunt
+          eligendi excepturi. Corrupti, consectetur ut!
+        </p>
+        <img class="DisplayBlock" src="images/flowlayout/FL00.png" alt="DisplayBlock">
+        <a class="DisplayBlock" href="google.com">Google</a>
+      </article>
+
+      <!-- Display Inline -->
+      <article>
+        <h3>Дисплей Inline</h3>
+        <p> Перевизначення стандартного відображуваного Block елемента <code>Display: Inline</code></p>
+        <p>
+
+          Значення inline властивості display змушує елемент поводитись так, ніби це елемент вбудованого рівня , як
+          <code>&lt;span&gt;</code> або <code>&lt;a&gt;</code> елемент. Правила стилю в наступному прикладі відображають
+          елементи <code>&lt;p&gt;</code> та <code>&lt;li&gt;</code> як елементи вбудованого рівня:</p>
+        <p>Block elements:</p>
+        <ul>
+          <li>&lt;div&gt;</li>
+          <li>&lt;p&gt;</li>
+          <li>&lt;h1&gt; - &lt;h6&gt;</li>
+        </ul>
+
+        <p>Приклади:</p>
+        <pre>
+          <code>
+          p {
+              display: inline;
+          }
+          ul li {
+              display: inline;
+          }
+          </code>
+          </pre>
+
+        <p class="DisplayInline">
+          This paragraph element generates an inline box.
+        </p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>        
       </article>
 
     </section>
