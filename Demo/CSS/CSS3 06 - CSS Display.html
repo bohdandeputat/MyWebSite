@@ -83,6 +83,61 @@
           Layout</a></q>
     </section>
 
+    <!-- CSS Display -->
+    <section>
+      <h2>Типи Відображення. </h2>
+      <p>Елементи HTML спочатку позиціонуються за типом відображення. Тип відображення визначає чи можуть інші елементи
+        розташовуватися поруч з ними, і як на це впливають відступи, поля та інші властивості CSS. <br>
+        Два найважливіші типи відображення:</p>
+      <ul>
+        <li>Block</li>
+        <li>Inline</li>
+      </ul>
+      <p>
+        Специфікація CSS визначає значення відображення за замовчуванням для всіх елементів, наприклад, елемент
+        <code>&ltdiv&gt;</code> відображається як блок , тоді як елемент <code>&lt;span&gt;</span></code>
+        відображається в рядку.
+      </p>
+      <q><a href="https://developer.mozilla.org/ru/docs/Web/CSS/display">MDN Display</a></q>
+
+      <p>Зміна стандартного відображуваного значення</p>
+      <p>Перевизначення стандартного відображуваного значення елемента є важливим наслідком властивості
+        <code>display</code>. <br>
+        Наприклад, зміна елемента inline-level для відображення як елемента block-level або зміна елемента block-level
+        для відображення як елемента inline-level.
+      </p>
+
+      <!-- Display Block -->
+      <article>
+        <h3>Дисплей Block</h3>
+        <p> Перевизначення стандартного відображуваного Inline елемента <code>Display: Block</code></p>
+          <p>Вбудований елемент не починається з нового рядка і займає лише необхідну ширину.</p>
+          <p>Inline elements:</p>
+          <ul>
+            <li>&lt;span&gt;</li>
+            <li>&lt;a&gt;</li>
+            <li>&lt;img&gt;</li>
+          </ul>
+          <pre>
+          <code>
+          span {
+              display: block;
+          }
+
+          a {
+              display: block;
+          }
+          </code>
+          </pre>
+
+          <p>
+            <span class="DisplayBlock">Lorem ipsum, dolor sit amet consectetur</span> adipisicing elit. Hic sed nihil odit in distinctio quas voluptatibus, minima, facilis blanditiis amet illo dolores reprehenderit tempore deserunt eligendi excepturi. Corrupti, consectetur ut!
+          </p>
+          <img class ="DisplayBlock" src="images/flowlayout/FL00.png" alt="DisplayBlock">
+          <a class="DisplayBlock" href="google.com">Google</a>
+      </article>
+
+    </section>
 
 
 

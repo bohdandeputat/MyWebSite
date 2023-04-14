@@ -30,3 +30,12 @@ nav {
   border: 1px dashed #000;
   padding: 5px;
 }
+
+/*CSS Display Property*/
+
+.DisplayBlock {
+  display: block;
+  background: yellowgreen;
+  border: solid 2px grey;
+  margin: 10px;
+}
