@@ -47,3 +47,22 @@ nav {
   padding: 50px;
   margin: 50px 60px 40px 30px;
 }
+
+/*Width and Height of an Element*/
+.WH {
+  width: 120px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin: 0;
+}
+
+/*Min Max Width and Height of an Element*/
+.mWmH {
+  min-width: 150px;
+  max-width: 220px;
+  min-height: 150px;
+  max-height: 220px;  
+  padding: 10px;
+  border: 5px dotted red;
+  margin: auto;
+}
