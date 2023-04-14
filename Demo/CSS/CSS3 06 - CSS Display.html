@@ -150,7 +150,8 @@
 
           Значення inline властивості display змушує елемент поводитись так, ніби це елемент вбудованого рівня , як
           <code>&lt;span&gt;</code> або <code>&lt;a&gt;</code> елемент. Правила стилю в наступному прикладі відображають
-          елементи <code>&lt;p&gt;</code> та <code>&lt;li&gt;</code> як елементи вбудованого рівня:</p>
+          елементи <code>&lt;p&gt;</code> та <code>&lt;li&gt;</code> як елементи вбудованого рівня:
+        </p>
         <p>Block elements:</p>
         <ul>
           <li>&lt;div&gt;</li>
@@ -179,7 +180,38 @@
           <li>Item 3</li>
           <li>Item 4</li>
           <li>Item 5</li>
-        </ul>        
+        </ul>
+      </article>
+
+      <!-- Display Inline-Block -->
+      <article>
+        <h3>Дисплей Inline-Block</h3>
+        <p> Перевизначення стандартного відображуваного Inline-Block елемента <code>Display: Inline-Block</code></p>
+        <p>
+          Значення inline-block властивості display змушує елемент генерувати блоковий блок, який буде перетікати з навколишнім вмістом, тобто в тому самому рядку, що й суміжний вміст. Наступні правила стилю відображають елементи як вбудований блок:</p>
+
+        <p>Приклади:</p>
+        <pre>
+          <code>
+            div {
+                display: inline-block;
+            }
+            span {
+                display: inline-block;
+            }
+          </code>
+        </pre>                
+
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+
+        </div>
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+        </div>
       </article>
 
     </section>
