@@ -59,9 +59,13 @@
       </ul>
 
       <p>
-        Псевдоклас починається з двокрапки ( :). Його синтаксис можна подати за допомогою:
+        Псевдоклас починається з двокрапки (:). Його синтаксис можна подати за допомогою:
       </p>
-      <p><code>*selector:pseudo-class { властивість : значення ; }</code></p>
+          <pre><code>
+            *selector:pseudo-class { 
+              властивість : значення; 
+            }
+          </code></pre>
 
       <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-pseudo-classes.php" target="_blank">CSS
           Pseudo-classes</a></q>
@@ -73,44 +77,43 @@
         <p>За допомогою прив’язки псевдокласів посилання можуть відображатися різними способами:
         </p>
 
-        <p>Приклад:</p>
-        <!-- Anchor Pseudo-classes -->
-        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
-          стилізації є видалення підкреслень із відвіданих посилань.
-        </p>
-        <p><code>a:link {
-          color: blue;
-          }
-          <br>
-          a:visited {
-          text-decoration: none;
-          }</code></p>
-
-        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
-          стилізації є видалення підкреслень із відвіданих посилань.
-        </p>
-        <p><code>
-            a:hover {
-              color: red;
-            }<br>
-          a:active {
-              color: gray;
-          } <br>
-          
-          a:focus {
-              color: yellow;
-          }
-
-          </code></p>
-
+        <!-- Example Anchor Pseudo-classes -->
         <div>
-          <p><b><a href="https://www.google.com" target="_blank">Посилання на www.google.com</a></b></p>
-          <p><b>Note:
-            щоб ці псевдокласи працювали ідеально, ви повинні визначити їх у точному порядку — :link, :visited, :hover, :active, :focus.
-          </p>
-          </div>
+          <p>Приклади:</p>
 
+          <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим
+            прийомом стилізації є видалення підкреслень із відвіданих посилань.
+          </p>
+          <pre><code>
+            a:link {
+              color: brown;
+            }
+            
+            a:visited {
+              color: green;
+            }
+            
+            a:hover {
+              color: tomato;
+            }
+            
+            a:active {
+              color: aqua;
+            }
+            
+            a:focus {
+              color: blueviolet;
+            }
+          </code></pre>
+
+          <p><b><a href="https://www.google.com" target="_blank">Посилання на www.google.com</a></b></p>
+          <p><strong>Note:</strong>
+            Щоб ці псевдокласи працювали ідеально, ви повинні визначити їх у точному порядку — <br>
+            <em>:link, :visited, :hover, :active, :focus</em>.
+          </p>
+        </div>
       </article>
+
 
     </section>
 
