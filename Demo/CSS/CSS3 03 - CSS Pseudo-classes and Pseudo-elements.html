@@ -61,7 +61,11 @@
       <p>
         Псевдоклас починається з двокрапки ( :). Його синтаксис можна подати за допомогою:
       </p>
-      <p><code>*selector:pseudo-class { властивість : значення ; }</code></p>
+      <pre><code>
+          *selector:pseudo-class { 
+            властивість : значення; 
+          }
+      </code></pre>
 
       <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-pseudo-classes.php" target="_blank">CSS
           Pseudo-classes</a></q>
@@ -73,42 +77,89 @@
         <p>За допомогою прив’язки псевдокласів посилання можуть відображатися різними способами:
         </p>
 
-        <p>Приклад:</p>
-        <!-- Anchor Pseudo-classes -->
-        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
-          стилізації є видалення підкреслень із відвіданих посилань.
-        </p>
-        <p><code>a:link {
+        <!-- Example Anchor Pseudo-classes -->
+        <div>
+          <p>Приклади:</p>
+          <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим
+            прийомом
+            стилізації є видалення підкреслень із відвіданих посилань.
+          </p>
+          <pre><code>
+          a:link {
           color: blue;
           }
-          <br>
+        
           a:visited {
           text-decoration: none;
-          }</code></p>
+          }
+          </code></pre>
 
-        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
-          стилізації є видалення підкреслень із відвіданих посилань.
-        </p>
-        <p><code>
-            a:hover {
+          <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим
+            прийомом
+            стилізації є видалення підкреслень із відвіданих посилань.
+          </p>
+          <pre>
+          <code>
+          a:hover {
               color: red;
-            }<br>
-          a:active {
-              color: gray;
-          } <br>
+          }
           
+           a:active {
+              color: gray;
+          }
+                    
           a:focus {
               color: yellow;
           }
+          </code>
+          </pre>
 
-          </code></p>
-
-        <div>
           <p><b><a href="https://www.google.com" target="_blank">Посилання на www.google.com</a></b></p>
-          <p><b>Note:
-            щоб ці псевдокласи працювали ідеально, ви повинні визначити їх у точному порядку — :link, :visited, :hover, :active, :focus.
+          <p><strong>Note:</strong>
+            щоб ці псевдокласи працювали ідеально, ви повинні визначити їх у точному порядку — :link, :visited,
+            :hover, :active, :focus.
           </p>
-          </div>
+        </div>
+      </article>
+
+
+      <!-- The first- last- nth- child Pseudo-class -->
+      <article>
+        <h3>Псевдокласи :first-child :last-child :nth-child.</h3>
+        <p>
+          Псевдоклас <code>:first-child</code> відповідає елементу, який є першим дочірнім елементом іншого елемента.
+        </p>
+
+        <!-- Example the Pseudo-classe :first-child -->
+        <div>
+          <p>Приклад:</p>
+          <p>
+            Селектор <code>ol li:first-child</code> у прикладі нижче вибирає перший елемент списку впорядкованого
+            списку та видаляє верхню межу з
+            нього.
+          </p>
+          <pre><code>
+            ol li {
+              padding: 10px 0;
+              border-top: 1px solid green;
+            }
+            
+            li:first-child {
+              padding: 10px 10px;
+              border-top: 2px dotted red;
+              font-weight: bold;
+            }
+            </code></pre>
+
+          <ol>
+            <li>Mix ingredients</li>
+            <li>Bake in oven for an hour</li>
+            <li>Allow to stand for ten minutes</li>
+          </ol>
+
+        </div>
+
+
 
       </article>
 
