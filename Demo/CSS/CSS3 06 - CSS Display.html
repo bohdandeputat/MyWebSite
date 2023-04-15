@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до CSS3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади CSS3</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- What Is Document Flow? -->
+    <section>
+      <h2>Що таке Потік Документу?
+      </h2>
+      <p><em>Потік документів</em> – це розташування елементів сторінки, визначене операторами позиціонування CSS, і
+        порядком
+        елементів HTML. Він визначає, як кожен елемент займає простір і як інші елементи розташовуються відповідно.</p>
+      </p>
+      <figure>
+        <img src="images/flowlayout/FL00.png" alt="CSS Flow Layout">
+        <figcaption>
+          CSS Flow Layout
+        </figcaption>
+      </figure>
+
+      <p>
+        <em>Normal Flow</em> або <em>Flow Layout</em> — це спосіб відображення блокових і вбудованих елементів на
+        сторінці до внесення
+        будь-яких змін до їх макета. <br>
+        Потік — це, по суті, набір елементів, які працюють разом і знають один про одного. Щойно щось вилучено з потоку,
+        воно працює незалежно.
+      <figure>
+        <img src="images/flowlayout/FL01.png" alt="Takes the Element Out of Normal Flow">
+        <img src="images/flowlayout/FL02.png" alt="Takes the Element Out of Normal Flow">
+        <img src="images/flowlayout/FL03.png" alt="Takes the Element Out of Normal Flow">
+        <figcaption>
+          Takes the Element Out of Normal Flow
+        </figcaption>
+      </figure>
+      <p>Існує три основні способи розташування елементів:</p>
+      <ul>
+        <li>Display types</li>
+        <li>Positioning</li>
+        <li>Floats</li>
+      </ul>
+      <q><a href="https://soulandwolf.com.au/blog/what-is-document-flow/" target="_blank">What Is Document Flow?</a></q>
+      <q><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout" target="_blank">CSS Flow
+          Layout</a></q>
+    </section>
+
+    <!-- CSS Display -->
+    <section>
+      <h2>Типи Відображення. </h2>
+      <p>Елементи HTML спочатку позиціонуються за типом відображення. Тип відображення визначає чи можуть інші елементи
+        розташовуватися поруч з ними, і як на це впливають відступи, поля та інші властивості CSS. <br>
+        Два найважливіші типи відображення:</p>
+      <ul>
+        <li>Block</li>
+        <li>Inline</li>
+      </ul>
+      <p>
+        Специфікація CSS визначає значення відображення за замовчуванням для всіх елементів, наприклад, елемент
+        <code>&ltdiv&gt;</code> відображається як блок , тоді як елемент <code>&lt;span&gt;</span></code>
+        відображається в рядку.
+      </p>
+      <q><a href="https://developer.mozilla.org/ru/docs/Web/CSS/display">MDN Display</a></q>
+
+      <p>Зміна стандартного відображуваного значення</p>
+      <p>Перевизначення стандартного відображуваного значення елемента є важливим наслідком властивості
+        <code>display</code>. <br>
+        Наприклад, зміна елемента inline-level для відображення як елемента block-level або зміна елемента block-level
+        для відображення як елемента inline-level.
+      </p>
+
+      <!-- Display Block -->
+      <article>
+        <h3>Дисплей Block</h3>
+        <p> Перевизначення стандартного відображуваного Inline елемента <code>Display: Block</code></p>
+        <p>Вбудований елемент не починається з нового рядка і займає лише необхідну ширину.</p>
+        <p>Inline elements:</p>
+        <ul>
+          <li>&lt;span&gt;</li>
+          <li>&lt;a&gt;</li>
+          <li>&lt;img&gt;</li>
+        </ul>
+
+        <p>Приклади:</p>
+        <pre>
+          <code>
+          span {
+              display: block;
+          }
+
+          a {
+              display: block;
+          }
+          </code>
+          </pre>
+
+
+        <p>
+          <span class="DisplayBlock">Lorem ipsum, dolor sit amet consectetur</span> adipisicing elit. Hic sed nihil odit
+          in distinctio quas voluptatibus, minima, facilis blanditiis amet illo dolores reprehenderit tempore deserunt
+          eligendi excepturi. Corrupti, consectetur ut!
+        </p>
+        <img class="DisplayBlock" src="images/flowlayout/FL00.png" alt="DisplayBlock">
+        <a class="DisplayBlock" href="google.com">Google</a>
+      </article>
+
+      <!-- Display Inline -->
+      <article>
+        <h3>Дисплей Inline</h3>
+        <p> Перевизначення стандартного відображуваного Block елемента <code>Display: Inline</code></p>
+        <p>
+
+          Значення inline властивості display змушує елемент поводитись так, ніби це елемент вбудованого рівня , як
+          <code>&lt;span&gt;</code> або <code>&lt;a&gt;</code> елемент. Правила стилю в наступному прикладі відображають
+          елементи <code>&lt;p&gt;</code> та <code>&lt;li&gt;</code> як елементи вбудованого рівня:
+        </p>
+        <p>Block elements:</p>
+        <ul>
+          <li>&lt;div&gt;</li>
+          <li>&lt;p&gt;</li>
+          <li>&lt;h1&gt; - &lt;h6&gt;</li>
+        </ul>
+
+        <p>Приклади:</p>
+        <pre>
+          <code>
+          p {
+              display: inline;
+          }
+          ul li {
+              display: inline;
+          }
+          </code>
+          </pre>
+
+        <p class="DisplayInline">
+          This paragraph element generates an inline box.
+        </p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ul>
+      </article>
+
+      <!-- Display Inline-Block -->
+      <article>
+        <h3>Дисплей Inline-Block</h3>
+        <p> Перевизначення стандартного відображуваного Inline-Block елемента <code>Display: Inline-Block</code></p>
+        <p>
+          Значення inline-block властивості display змушує елемент генерувати блоковий блок, який буде перетікати з навколишнім вмістом, тобто в тому самому рядку, що й суміжний вміст. Наступні правила стилю відображають елементи як вбудований блок:</p>
+
+        <p>Приклади:</p>
+        <pre>
+          <code>
+            div {
+                display: inline-block;
+            }
+            span {
+                display: inline-block;
+            }
+          </code>
+        </pre>                
+
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+
+        </div>
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+
+          <span class="DisplayInlineBlock">This span element and its parent div element generate an inline-block box.</span>
+        </div>
+      </article>
+
+      <!-- Hide an Element - display:none or visibility:hidden? -->
+      <article>
+        <h3>Приховати елемент - display:none або visibility:hidden?</h3>
+        <p> 
+          Приховати елемент можна, встановивши displayдля властивості none. Елемент буде приховано, а сторінка відображатиметься так, ніби елемента там немає:        <p>
+            visibility:hidden;також приховує елемент.
+
+            Однак елемент займатиме стільки ж місця, скільки й раніше. Елемент буде приховано, але все одно вплине на макет:        <p>Приклади:</p>
+        <pre>
+          <code>
+            div {
+                visibility: hidden;
+            }
+            span {
+                display: none;
+            }
+          </code>
+        </pre>                
+
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock"> Display None or Hide 1 </span>
+          <span class="DisplayInlineBlock DisplayHidden"> Display None or Hide 2 </span>
+          <span class="DisplayInlineBlock"> Display None or Hide 3 </span>
+        </div>
+
+        <div class="DisplayInlineBlock">
+          <span class="DisplayInlineBlock"> Display None or Hide 1 </span>
+          <span class="DisplayInlineBlock DisplayNone"> Display None or Hide 2 </span>
+          <span class="DisplayInlineBlock"> Display None or Hide 3 </span>
+        </div>
+      </article>      
+    </section>
+
+
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

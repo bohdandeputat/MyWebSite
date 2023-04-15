@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до CSS3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади CSS3</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- What is CSS? -->
+    <section>
+      <h2>Що таке специфічність?</h2>
+      <p>
+        Якщо є два або більше правил CSS, які вказують на той самий елемент, селектор із найвищим значенням
+        специфічності «переможе», а його оголошення стилю буде застосовано до цього елемента HTML. <br>
+
+
+      </p>
+
+
+
+      <q><a href="https://www.w3schools.com/css/css_specificity.asp" target="_blank">CSS Specificity</a></q>
+
+      <!-- CSS Specificity -->
+      <article>
+        <h3>Специфічність CSS</h3>
+        <p>
+          Подумайте про специфічність як про оцінку/ранг, що визначає, яке оголошення стилю в кінцевому підсумку буде
+          застосовано до елемента.
+        </p>
+
+        <p>Приклад:</p>
+        <!-- CSS Specificity -->
+        <p> У цьому прикладі ми додали селектор класу (під назвою «test») і вказали зелений колір для цього класу. Тепер
+          текст буде зеленим (хоча ми вказали червоний колір для селектора елемента "p"). Це пояснюється тим, що
+          селектору класу надається вищий пріоритет:</p>
+        <p>
+        <pre>
+          <code>
+          .test {color: green;}
+          p {color: red;}
+        </code>
+      </pre>
+        </p>
+
+        <p>
+        <p class="test">Hello World!</p>
+
+        <p id="demo" class="test">Hello World demo!</p>
+
+        <p id="demo" class="test test1">Hello World demo!</p>
+
+      </article>
+
+      <!-- CSS Specificity -->
+      <article>
+        <h3>CSS Правило !important</h3>
+        <p>
+          Правило !importantв CSS використовується, щоб додати властивості/значенню більшої важливості, ніж зазвичай.
+
+          Насправді, якщо ви використовуєте !importantправило, воно замінить УСІ попередні правила стилю для цієї
+          конкретної властивості цього елемента!
+
+
+        </p>
+
+        <p>Приклад:</p>
+        <!-- CSS !important -->
+        <p> У прикладі вище. усі три абзаци отримають червоний фоновий колір, навіть якщо селектор ідентифікатора та
+          селектор класу мають вищу специфічність. Правило !importantперекриває background-colorвластивість в обох
+          випадках.
+
+        <p>
+        <pre>
+          <code>
+          #myid {
+            background-color: blue;
+          }
+
+           .myclass {
+            background-color: gray;
+          }
+
+          p {
+            color: red; !important
+          }
+        </code>
+      </pre>
+        </p>
+
+
+        <p>This is some text in a paragraph.</p>
+
+        <p class="myclass">This is some text in a paragraph.</p>
+
+        <p id="myid">This is some text in a paragraph.</p>
+
+      </article>
+
+    </section>
+
+
+
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>
