@@ -34,3 +34,25 @@ body {
   }
 
   /*Anchor Pseudo-classes*/
+
+  div a:link {
+    color: brown;
+    text-decoration: none;
+  }
+
+  div a:visited {
+    color: green;
+  }
+
+  div a:hover {
+    color: tomato;
+  }
+
+  div a:active {
+    color: aqua;
+  }
+
+  div a:focus {
+    color: blueviolet;
+  }
+
