@@ -59,9 +59,13 @@
       </ul>
 
       <p>
-        Псевдоклас починається з двокрапки ( :). Його синтаксис можна подати за допомогою:
+        Псевдоклас починається з двокрапки (:). Його синтаксис можна подати за допомогою:
       </p>
-      <p><code>*selector:pseudo-class { властивість : значення ; }</code></p>
+      <pre><code>
+            *selector:pseudo-class { 
+              властивість : значення; 
+            }
+          </code></pre>
 
       <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-pseudo-classes.php" target="_blank">CSS
           Pseudo-classes</a></q>
@@ -73,50 +77,120 @@
         <p>За допомогою прив’язки псевдокласів посилання можуть відображатися різними способами:
         </p>
 
-        <p>Приклад:</p>
-        <!-- Anchor Pseudo-classes -->
-        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
-          стилізації є видалення підкреслень із відвіданих посилань.
-        </p>
-        <p><code>a:link {
-          color: blue;
-          }
-          <br>
-          a:visited {
-          text-decoration: none;
-          }</code></p>
-
-        <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим прийомом
-          стилізації є видалення підкреслень із відвіданих посилань.
-        </p>
-        <p><code>
-            a:hover {
-              color: red;
-            }<br>
-          a:active {
-              color: gray;
-          } <br>
-          
-          a:focus {
-              color: yellow;
-          }
-
-          </code></p>
-
+        <!-- Example Anchor Pseudo-classes -->
         <div>
-          <p><b><a href="https://www.google.com" target="_blank">This is a link</a></b></p>
-          <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.
+          <p>Приклади:</p>
+          <p> Ці псевдокласи дозволяють вам відрізняти стиль невідвіданих посилань від відвіданих. Найпоширенішим
+            прийомом стилізації є видалення підкреслень із відвіданих посилань.
           </p>
-          <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
-        </div>
+          <pre><code>
+            a:link {
+              color: brown;
+            }
+            
+            a:visited {
+              color: green;
+            }
+            
+            a:hover {
+              color: tomato;
+            }
+            
+            a:active {
+              color: aqua;
+            }
+            
+            a:focus {
+              color: blueviolet;
+            }
+          </code></pre>
 
+          <p><b><a href="https://www.google.com" target="_blank">Посилання на www.google.com</a></b></p>
+          <p><strong>Note:</strong>
+            Щоб ці псевдокласи працювали ідеально, ви повинні визначити їх у точному порядку — <br>
+            <em>:link, :visited, :hover, :active, :focus</em>.
+          </p>
+        </div>
       </article>
 
+      <!-- The first- last- nth- child Pseudo-class -->
+      <article>
+        <h3>Псевдокласи :first-child :last-child :nth-child.</h3>
+        <p>
+          Псевдоклас <code>:first-child</code> відповідає елементу, який є першим дочірнім елементом іншого елемента.
+        </p>
+        <p>
+          Псевдоклас <code>:last-child</code> відповідає кожному елементу, який є останнім дочірнім елементом іншого
+          елемента.
+        </p>
+        <p>
+          Псевдоклас <code>:nth-child</code> відповідає кожному елементу, який є n-м дочірнім елементом іншого
+          елемента.
+        </p>
+
+        <!-- Example the Pseudo-classe :first-child -->
+        <div>
+          <p>Приклади:</p>
+          <p>
+            Селектор <code>ol li:first-child</code> у прикладі нижче вибирає перший елемент списку впорядкованого
+            списку та видаляє верхню межу з нього.
+          </p>
+          <pre><code>
+            li:first-child {
+              padding: 10px 10px;
+              border-top: 5px dotted red;
+              font-weight: bold;
+            }
+          </code></pre>
+
+          <!-- Example the Pseudo-classe :last-child -->
+          <p>
+            Селектор <code>ol li:last-child</code> у прикладі нижче вибирає останній елемент списку впорядкованого
+            списку та додає до нього ліву межу та фон.
+          </p>
+          <pre><code>
+            li:last-child {
+              padding: 10px 10px;
+              background-color: aqua;
+              border-left: 5px solid blue;
+              font-weight: bold;
+            }
+          </code></pre>
+
+          <!-- Example the Pseudo-classe :nth-child -->
+          <p>
+            Селектор <code>:nth-child</code>.
+            Базовий синтаксис цього селектора можна задати за допомогою <code>:nth-child(N)</code>, де N— аргумент, який
+            може бути
+            числом, ключовим словом ( even або odd) або виразом у формі, xn+y де x і y — цілі числа (наприклад 1n, 2n,
+            2n+1,
+            …).
+          </p>
+
+          <pre><code>
+            li:nth-child(4n) {
+              padding: 10px 50px;
+              background: #f2f2f2;
+              border: 1px solid grey;
+              color: red;
+            }
+        </code></pre>
+
+          <p>Мови програмування – список найпопулярніших:</p>
+          <ol>
+            <li>HTML і CSS</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Swift</li>
+            <li>C ++</li>
+            <li>C #</li>
+            <li>R</li>
+            <li>Golang (Go)</li>
+          </ol>
+        </div>
+      </article>
     </section>
-
-
-
-
   </main>
 
   <!-- Aditional information -->
