@@ -85,3 +85,21 @@ div a:active {
 div a:focus {
   color: blueviolet;
 }
+
+/*Example the Pseudo-classe :first-child*/
+
+div ol {
+  padding: 0;
+  list-style: none;
+}
+
+div ol li {
+  padding: 10px 0;
+  border-top: 1px solid green;
+}
+
+div li:first-child {
+  padding: 10px 10px;
+  border-top: 2px dotted red;
+  font-weight: bold;
+}
