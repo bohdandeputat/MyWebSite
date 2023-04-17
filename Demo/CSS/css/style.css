@@ -37,6 +37,9 @@ nav {
 div.static {
   position: static;
   border: 3px solid #73AD21;
+  left: 20px;
+  width: 300px;
+  height: 50px;
 }
 
 /*position: relative*/
