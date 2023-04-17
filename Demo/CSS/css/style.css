@@ -52,6 +52,15 @@ nav {
 }
 
 
+/*Outer block*/
+.outer{
+  margin: 50px auto;
+  width: 400px;
+  height: 400px;
+  border: 2px dotted grey;
+  position: relative;
+}
+
 /*position: static*/
 div.static {
   position: static;
@@ -59,4 +68,14 @@ div.static {
   left: 20px;
   width: 300px;
   height: 50px;
+}
+
+/*position: relative*/
+div.relative {
+  position: relative;
+  border: 3px solid tomato;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
 }

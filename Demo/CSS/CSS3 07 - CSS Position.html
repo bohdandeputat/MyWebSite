@@ -85,8 +85,8 @@
           Елемент з position: static; не позиціонується ніяким особливим чином; він завжди розташовується відповідно до
           нормального потоку сторінки:</p>
 
-          <p>Приклад:</p>
-          <pre><code>
+        <p>Приклад:</p>
+        <pre><code>
             div.static {
               position: static;
               border: 3px solid #73AD21;
@@ -95,9 +95,38 @@
               height: 50px;
             }
           </code></pre>
-          <div class="static">
-            Цей <code>div</code> елемент має позиціювання: <code>static</code>;
-            </div>
+        <div class="static">
+          Цей <code>div</code> елемент має позиціювання: <code>static</code>;
+        </div>
+      </article>
+
+      <!-- Relative Positioning -->
+      <article>
+        <h3>Позиція: Relative</h3>
+        <p>
+          Елемент з <code>position: relative;</code> позиціонується відносно свого нормального положення.
+
+          Блок змінює своє положення відповідно до властивостей — top або bottom та/або left або right.</p>
+
+        <p>Приклад:</p>
+        <pre><code>
+          relative {
+            position: relative;
+            border: 3px solid tomato;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+          }
+          </code></pre>
+        <div class="outer">
+          <div class="relative">
+            Цей <code>div</code> елемент має позиціювання: <code>relative</code>;
+          </div>
+        </div>
+
+        <p><strong>Примітка.</strong> Елемент можна переміщувати та накладати на інші елементи, але при цьому
+          зберігається простір, спочатку зарезервований для нього в звичайному потоці.</p>
       </article>
 
     </section>
