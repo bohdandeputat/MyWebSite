@@ -27,7 +27,7 @@
 ### Зміст(Посилання на гілки):
 - [#01 - Синтаксис CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.01-Basic-Template)
 - [#02 - Селектор CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.02-CSS-Selectors)
-- [#03 - Псевдокласи та Псевдоелементи CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.03-CSS-Pseudo-classes-and-Pseudo-elements)
+- [#03.1 - Псевдокласи CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.03.1-CSS-Pseudo-classes)
 - [#04 - Специфічність CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.04-CSS-Specificity)
 - [#05 - Блокова модель CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.05-CSS-Box-Model)
 - [#06 - Властивість Display CSS](https://github.com/bohdandeputat/MyWebSite/tree/CSS3.06-CSS-Display)
