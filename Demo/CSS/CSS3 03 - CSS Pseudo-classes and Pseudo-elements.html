@@ -119,27 +119,40 @@
         <p>
           Псевдоклас <code>:first-child</code> відповідає елементу, який є першим дочірнім елементом іншого елемента.
         </p>
+        <p>
+          Псевдоклас <code>:first-child</code> відповідає кожному елементу, який є останнім дочірнім елементом іншого
+          елемента.
+        </p>
 
         <!-- Example the Pseudo-classe :first-child -->
         <div>
           <p>Приклади:</p>
           <p>
             Селектор <code>ol li:first-child</code> у прикладі нижче вибирає перший елемент списку впорядкованого
-            списку та видаляє верхню межу з
-            нього.
+            списку та видаляє верхню межу з нього.
           </p>
           <pre><code>
-            ol li {
-              padding: 10px 0;
-              border-top: 1px solid green;
-            }
-                  
             li:first-child {
               padding: 10px 10px;
-              border-top: 2px dotted red;
+              border-top: 5px dotted red;
               font-weight: bold;
             }
           </code></pre>
+
+          <p>
+            Селектор <code>ol li:last-child</code> у прикладі нижче вибирає останній елемент списку впорядкованого
+            списку та додає до нього ліву межу та фон.
+          </p>
+          <pre><code>
+            div li:last-child {
+              padding: 10px 10px;
+              background-color: aqua;
+              border-left: 5px solid blue;
+              font-weight: bold;
+            }
+          </code></pre>  
+
+
 
           <p>Мови програмування – список найпопулярніших:</p>
           <ol>
