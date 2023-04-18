@@ -55,60 +55,13 @@ nav {
 /*Outer block*/
 .outer{
   margin: 50px auto;
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
   border: 2px dotted grey;
   position: relative;
 }
 
-/*position: static*/
-div.static {
-  position: static;
-  border: 3px solid #73AD21;
-  left: 20px;
-  width: 300px;
-  height: 50px;
-}
-
-/*position: relative*/
-div.relative {
-  position: relative;
-  border: 3px solid tomato;
-  top: 50px;
-  left: 50px;
-  width: 150px;
-  height: 150px;
-}
-
-/*position: sticky*/
-div.sticky {
-  position: sticky;
-  background-color: lightgrey;
-  border: 3px solid red;
-  margin: 5px auto;
-  top: 10px;
-  width: 380px;
-  height: 20px;
-}
-
-/*position: absolute*/
-div.absolute {
-  position: absolute;
-  border: 3px solid greenyellow;
-  bottom: 50px;
-  right: 50px;
-  width: 150px;
-  height: 150px;
-}
-
-/*position: fixed*/
-div.fixed {
-  position: fixed;
-  background-color: azure;
-  border: 3px dotted red;
-  bottom: 10px;
-  left: 10px;
-  width: 450px;
-  height: 20px;
+img {
+  float: right;
 }
 
