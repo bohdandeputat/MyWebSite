@@ -160,6 +160,35 @@
           залежно від значення властивості z-index. Крім того, абсолютно позиціонований елемент може мати поля , і вони
           не згортаються з іншими полями.
       </article>
+
+      <!-- Fixed Positioning -->
+      <article>
+        <h3>Позиція: Fixed</h3>
+        <p>
+          Елемент з <code>position: fixed;</code> позиціонується відносно вікна перегляду, що означає, що він завжди
+          залишається в тому самому місці, навіть якщо сторінку прокручують. Властивості top, right, bottom і left
+          використовуються для позиціонування елемента.
+        </p>
+
+        <p>Приклад:</p>
+        <pre><code>
+          relative {
+            position: absolute;
+            border: 3px solid greenyellow;
+            bottom: 50px;
+            right: 50px;
+            width: 150px;
+            height: 150px;
+          }
+          </code></pre>
+        <div class="fixed">
+          Цей <code>div</code> елемент має позиціювання: <code>fixed</code>;
+        </div>
+
+        <p><strong>Примітка.</strong> Фіксований елемент не залишає розриву на сторінці, де він зазвичай розташовувався
+          б.
+      </article>
+
     </section>
 
 

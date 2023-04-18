@@ -89,3 +89,14 @@ div.absolute {
   width: 150px;
   height: 150px;
 }
+
+/*position: fixed*/
+div.fixed {
+  position: fixed;
+  background-color: azure;
+  border: 3px dotted red;
+  bottom: 10px;
+  left: 10px;
+  width: 450px;
+  height: 20px;
+}
