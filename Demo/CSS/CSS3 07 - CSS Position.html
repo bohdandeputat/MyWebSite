@@ -129,6 +129,47 @@
           зберігається простір, спочатку зарезервований для нього в звичайному потоці.</p>
       </article>
 
+      <!-- Sticky  Positioning -->
+      <article>
+        <h3>Позиція: Sticky </h3>
+        <p>
+          Елемент з <code>position: sticky;</code> позиціонується на основі позиції прокручування користувача.
+
+          Закріплений елемент перемикається між relative і fixed залежно від положення прокручування. Він розташовується
+          відносно, доки задане положення зсуву не зустрінеться у вікні перегляду — тоді воно «прилипає» на місце</p>
+
+        <p>Приклад:</p>
+        <pre><code>
+          sticky {
+            position: sticky;
+            background-color: lightgrey;
+            border: 3px solid red;
+            margin: 5px auto;
+            top: 10px;
+            width: 380px;
+            height: 20px;
+          }
+          </code></pre>
+        <div class="outer">
+          <p>Спробуйте прокрутити цей кадр, щоб зрозуміти, як працює позиціонування sticky.</p>
+          <div class="sticky">
+            Цей <code>div</code> елемент має позиціювання: <code>sticky</code>;
+          </div>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
+            Inciderint efficiantur його оголошення. Eum no molestiae voluptatibus.
+
+            Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
+            Inciderint efficiantur його оголошення. Eum no molestiae voluptatibus.
+          </p>
+        </div>
+
+        <p><strong>Примітка.</strong> Internet Explorer не підтримує фіксоване позиціонування. Для Safari потрібен
+          префікс -webkit- (див. приклад нижче). Ви також повинні вказати принаймні один із top right bottom left, щоб
+          закріплене позиціонування працювало.
+      </article>
+
       <!-- Absolute  Positioning -->
       <article>
         <h3>Позиція: Absolute </h3>
@@ -140,7 +181,7 @@
 
         <p>Приклад:</p>
         <pre><code>
-          relative {
+          absolute {
             position: absolute;
             border: 3px solid greenyellow;
             bottom: 50px;
@@ -161,6 +202,8 @@
           не згортаються з іншими полями.
       </article>
 
+
+
       <!-- Fixed Positioning -->
       <article>
         <h3>Позиція: Fixed</h3>
@@ -172,13 +215,14 @@
 
         <p>Приклад:</p>
         <pre><code>
-          relative {
-            position: absolute;
-            border: 3px solid greenyellow;
-            bottom: 50px;
-            right: 50px;
-            width: 150px;
-            height: 150px;
+          fixed {
+            position: fixed;
+            background-color: azure;
+            border: 3px dotted red;
+            bottom: 10px;
+            left: 10px;
+            width: 450px;
+            height: 20px;
           }
           </code></pre>
         <div class="fixed">
@@ -188,12 +232,7 @@
         <p><strong>Примітка.</strong> Фіксований елемент не залишає розриву на сторінці, де він зазвичай розташовувався
           б.
       </article>
-
     </section>
-
-
-
-
   </main>
 
   <!-- Aditional information -->
