@@ -90,6 +90,36 @@
             dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
           </div>
       </article>
+
+      <!-- Float Next To Each Other -->
+      <article>
+        <h3>Плаваючі елементи один поруч  з одним</h3>
+        <p>
+          Зазвичай елементи div відображатимуться один над одним. Однак, якщо ми використовуємо, <code>float: left</code> ми можемо дозволити елементам плавати поруч один з одним:</p>
+
+        <p>Приклад:</p>
+        <p>У наступному прикладі показано, що зображення мають плавати ліворуч олин за одним:</p>
+        <pre><code>
+          ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+          .thumbnail {
+            float: left;
+            width: 125px;
+            height: 125px;
+            margin: 10px;
+          }
+          </code></pre>
+        <div class="outer">
+          <ul>
+            <li class="thumbnail"><img src="images/float/club.jpg" alt="Club Card"></li>
+            <li class="thumbnail"><img src="images/float/diamond.jpg" alt="Diamond Card"></li>
+            <li class="thumbnail"><img src="images/float/spade.jpg" alt="Spade Card"></li>
+            <li class="thumbnail"><img src="images/float/heart.jpg" alt="Heart Card"></li>
+        </ul></div>
+      </article>      
     </section>
   </main>
 
