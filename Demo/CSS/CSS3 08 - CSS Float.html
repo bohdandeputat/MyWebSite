@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Specifies the character encoding for the HTML document-->
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <meta name="description" content="HTML Basics">
+  <meta name="keywords" content="html, webdesign">
+  <meta name="author" content="Bohdan Deputat">
+  <meta name="robots" content="index, nofollow">
+
+  <!-- Use latest version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- For mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Document Favicon in browser tabs -->
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+
+  <!-- Document title in browser tabs -->
+  <title>Вступ до CSS3</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    html {
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Основні приклади CSS3</h1>
+
+    <!-- Main navigation -->
+
+    <nav>Навігація</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+    <!-- CSS Position -->
+    <section>
+      <h2>Позиціонування</h2>
+      <p>Є кілька значень позиціонування, які можна застосувати до елементів. Початкове значення, застосоване до всіх
+        елементів, є «статичним», типом потоку.</p>
+      <p>
+        Властивість <code>position</code> вказує тип методу позиціонування, який використовується для елемента . <br>
+        Є п’ять різних значень позиції: </p>
+      <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+      </ul>
+
+      <p>Властивості зміщення позиції:</p>
+      <ul>
+        <li>top </li>
+        <li>right </li>
+        <li>bottom </li>
+        <li>left</li>
+      </ul>
+
+      <p>Існує дві групи властивостей позиціонування:</p>
+      <ul>
+        <li>In flow </li>
+        <li>Out-of-flow </li>
+      </ul>
+
+      <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-position.php" target="_blank">CSS
+          Position</a></q>
+
+      <!-- Static Positioning? -->
+      <article>
+        <h3>Позиція: Static</h3>
+        <p>
+          Елементи HTML за замовчуванням позиціонуються статично.
+          На статичні позиціоновані елементи не впливають властивості top, bottom, left і right. <br>
+          Елемент з position: static; не позиціонується ніяким особливим чином; він завжди розташовується відповідно до
+          нормального потоку сторінки:</p>
+
+        <p>Приклад:</p>
+        <pre><code>
+            div.static {
+              position: static;
+              border: 3px solid #73AD21;
+              left: 20px; - не буде застосовуватися
+              width: 300px;
+              height: 50px;
+            }
+          </code></pre>
+        <div class="static">
+          Цей <code>div</code> елемент має позиціювання: <code>static</code>;
+        </div>
+      </article>
+
+      <!-- Relative Positioning -->
+      <article>
+        <h3>Позиція: Relative</h3>
+        <p>
+          Елемент з <code>position: relative;</code> позиціонується відносно свого нормального положення.
+
+          Блок змінює своє положення відповідно до властивостей — top або bottom та/або left або right.</p>
+
+        <p>Приклад:</p>
+        <pre><code>
+          relative {
+            position: relative;
+            border: 3px solid tomato;
+            top: 50px;
+            left: 50px;
+            width: 150px;
+            height: 150px;
+          }
+          </code></pre>
+        <div class="outer">
+          <div class="relative">
+            Цей <code>div</code> елемент має позиціювання: <code>relative</code>;
+          </div>
+        </div>
+
+        <p><strong>Примітка.</strong> Елемент можна переміщувати та накладати на інші елементи, але при цьому
+          зберігається простір, спочатку зарезервований для нього в звичайному потоці.</p>
+      </article>
+
+      <!-- Sticky  Positioning -->
+      <article>
+        <h3>Позиція: Sticky </h3>
+        <p>
+          Елемент з <code>position: sticky;</code> позиціонується на основі позиції прокручування користувача.
+
+          Закріплений елемент перемикається між relative і fixed залежно від положення прокручування. Він розташовується
+          відносно, доки задане положення зсуву не зустрінеться у вікні перегляду — тоді воно «прилипає» на місце</p>
+
+        <p>Приклад:</p>
+        <pre><code>
+          sticky {
+            position: sticky;
+            background-color: lightgrey;
+            border: 3px solid red;
+            margin: 5px auto;
+            top: 10px;
+            width: 380px;
+            height: 20px;
+          }
+          </code></pre>
+        <div class="outer">
+          <p>Спробуйте прокрутити цей кадр, щоб зрозуміти, як працює позиціонування sticky.</p>
+          <div class="sticky">
+            Цей <code>div</code> елемент має позиціювання: <code>sticky</code>;
+          </div>
+          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
+            Inciderint efficiantur його оголошення. Eum no molestiae voluptatibus.
+
+            Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
+            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
+            Inciderint efficiantur його оголошення. Eum no molestiae voluptatibus.
+          </p>
+        </div>
+
+        <p><strong>Примітка.</strong> Internet Explorer не підтримує фіксоване позиціонування. Для Safari потрібен
+          префікс -webkit- (див. приклад нижче). Ви також повинні вказати принаймні один із top right bottom left, щоб
+          закріплене позиціонування працювало.
+      </article>
+
+      <!-- Absolute  Positioning -->
+      <article>
+        <h3>Позиція: Absolute </h3>
+        <p>
+          Елемент з <code>position: absolute;</code> позиціонується відносно першого батьківського елемента, який має
+          позицію, відмінну від статичної. Якщо такий елемент не знайдено, його буде розміщено на сторінці відносно
+          «верхнього лівого» кута вікна браузера. Зміщення коробки також можна вказати за допомогою однієї або кількох
+          властивостей top або bottom та/або left або right.</p>
+
+        <p>Приклад:</p>
+        <pre><code>
+          absolute {
+            position: absolute;
+            border: 3px solid greenyellow;
+            bottom: 50px;
+            right: 50px;
+            width: 150px;
+            height: 150px;
+          }
+          </code></pre>
+        <div class="outer">
+          <div class="absolute">
+            Цей <code>div</code> елемент має позиціювання: <code>absolute</code>;
+          </div>
+        </div>
+
+        <p><strong>Примітка.</strong> Абсолютно позиціоновані елементи повністю вилучаються з нормального потоку, тому
+          вони не займають місця під час розміщення однорідних елементів. Однак він може перекривати інші елементи
+          залежно від значення властивості z-index. Крім того, абсолютно позиціонований елемент може мати поля , і вони
+          не згортаються з іншими полями.
+      </article>
+
+
+
+      <!-- Fixed Positioning -->
+      <article>
+        <h3>Позиція: Fixed</h3>
+        <p>
+          Елемент з <code>position: fixed;</code> позиціонується відносно вікна перегляду, що означає, що він завжди
+          залишається в тому самому місці, навіть якщо сторінку прокручують. Властивості top, right, bottom і left
+          використовуються для позиціонування елемента.
+        </p>
+
+        <p>Приклад:</p>
+        <pre><code>
+          fixed {
+            position: fixed;
+            background-color: azure;
+            border: 3px dotted red;
+            bottom: 10px;
+            left: 10px;
+            width: 450px;
+            height: 20px;
+          }
+          </code></pre>
+        <div class="fixed">
+          Цей <code>div</code> елемент має позиціювання: <code>fixed</code>;
+        </div>
+
+        <p><strong>Примітка.</strong> Фіксований елемент не залишає розриву на сторінці, де він зазвичай розташовувався
+          б.
+      </article>
+    </section>
+  </main>
+
+  <!-- Aditional information -->
+  <aside></aside>
+
+  <!-- Footer -->
+  <footer></footer>
+</body>
+
+</html>

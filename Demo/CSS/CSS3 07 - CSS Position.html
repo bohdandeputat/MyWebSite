@@ -43,195 +43,83 @@
 
   <!-- Main part of site -->
   <main>
-    <!-- CSS Position -->
+    <!-- CSS Float -->
     <section>
-      <h2>Позиціонування</h2>
-      <p>Є кілька значень позиціонування, які можна застосувати до елементів. Початкове значення, застосоване до всіх
-        елементів, є «статичним», типом потоку.</p>
+      <h2>CSS Float. Плаваючі елементи </h2>
+      <p>Ви можете переміщати елементи ліворуч або праворуч, але це стосується лише елементів, які генерують
+        прямокутники, які не є абсолютно позиціонованими . Будь-який елемент, який слідує за плаваючим елементом, буде
+        обтікати плаваючий елемент з іншого боку.</p>
       <p>
-        Властивість <code>position</code> вказує тип методу позиціонування, який використовується для елемента . <br>
-        Є п’ять різних значень позиції: </p>
+        Властивість <code>float</code> може мати одне з трьох значень:</p>
       <ul>
-        <li>static</li>
-        <li>relative</li>
-        <li>fixed</li>
-        <li>absolute</li>
-        <li>sticky</li>
+        <li>left - Елемент плаває зліва від блоку, що його містить.</li>
+        <li>right - Елемент плаває з правого боку блоку, що його містить.</li>
+        <li>none - Вилучає властивість float з елемента.</li>
+
       </ul>
 
-      <p>Властивості зміщення позиції:</p>
-      <ul>
-        <li>top </li>
-        <li>right </li>
-        <li>bottom </li>
-        <li>left</li>
-      </ul>
 
-      <p>Існує дві групи властивостей позиціонування:</p>
-      <ul>
-        <li>In flow </li>
-        <li>Out-of-flow </li>
-      </ul>
+      <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-float.php" target="_blank">CSS Float</a></q>
 
-      <q><a href="https://www.tutorialrepublic.com/css-tutorial/css-position.php" target="_blank">CSS
-          Position</a></q>
-
-      <!-- Static Positioning? -->
+      <!-- How Elements Float -->
       <article>
-        <h3>Позиція: Static</h3>
+        <h3>Плаваючі елементи</h3>
         <p>
-          Елементи HTML за замовчуванням позиціонуються статично.
-          На статичні позиціоновані елементи не впливають властивості top, bottom, left і right. <br>
-          Елемент з position: static; не позиціонується ніяким особливим чином; він завжди розташовується відповідно до
-          нормального потоку сторінки:</p>
+          Плаваючий елемент вилучається з нормального потоку та зміщується ліворуч або праворуч, наскільки це можливо, у
+          просторі, доступному для вмісту елемента.
+
+          Інші елементи зазвичай обтікають плаваючі предмети, якщо їм не заважає це робити їх <code>clear</code>
+          властивість. Елементи переміщуються горизонтально, що означає, що елемент можна переміщати лише ліворуч або
+          праворуч, а не вгору чи вниз.</p>
 
         <p>Приклад:</p>
+        <p>У наступному прикладі показано, що зображення має плавати праворуч у тексті:</p>
         <pre><code>
-            div.static {
-              position: static;
-              border: 3px solid #73AD21;
-              left: 20px; - не буде застосовуватися
-              width: 300px;
-              height: 50px;
-            }
-          </code></pre>
-        <div class="static">
-          Цей <code>div</code> елемент має позиціювання: <code>static</code>;
-        </div>
-      </article>
-
-      <!-- Relative Positioning -->
-      <article>
-        <h3>Позиція: Relative</h3>
-        <p>
-          Елемент з <code>position: relative;</code> позиціонується відносно свого нормального положення.
-
-          Блок змінює своє положення відповідно до властивостей — top або bottom та/або left або right.</p>
-
-        <p>Приклад:</p>
-        <pre><code>
-          relative {
-            position: relative;
-            border: 3px solid tomato;
-            top: 50px;
-            left: 50px;
-            width: 150px;
-            height: 150px;
+          img {
+            float: right;
           }
           </code></pre>
         <div class="outer">
-          <div class="relative">
-            Цей <code>div</code> елемент має позиціювання: <code>relative</code>;
+          <p><img src="images/pineapple.jpg" alt="Pineapple" style="width:170px;height:170px;margin-left:15px;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+            lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+            eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+            eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis
+            dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare
+            turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed
+            dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
           </div>
-        </div>
-
-        <p><strong>Примітка.</strong> Елемент можна переміщувати та накладати на інші елементи, але при цьому
-          зберігається простір, спочатку зарезервований для нього в звичайному потоці.</p>
       </article>
 
-      <!-- Sticky  Positioning -->
+      <!-- Float Next To Each Other -->
       <article>
-        <h3>Позиція: Sticky </h3>
+        <h3>Плаваючі елементи один поруч  з одним</h3>
         <p>
-          Елемент з <code>position: sticky;</code> позиціонується на основі позиції прокручування користувача.
-
-          Закріплений елемент перемикається між relative і fixed залежно від положення прокручування. Він розташовується
-          відносно, доки задане положення зсуву не зустрінеться у вікні перегляду — тоді воно «прилипає» на місце</p>
+          Зазвичай елементи div відображатимуться один над одним. Однак, якщо ми використовуємо, <code>float: left</code> ми можемо дозволити елементам плавати поруч один з одним:</p>
 
         <p>Приклад:</p>
+        <p>У наступному прикладі показано, що зображення мають плавати ліворуч олин за одним:</p>
         <pre><code>
-          sticky {
-            position: sticky;
-            background-color: lightgrey;
-            border: 3px solid red;
-            margin: 5px auto;
-            top: 10px;
-            width: 380px;
-            height: 20px;
+          ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+          }
+          .thumbnail {
+            float: left;
+            width: 125px;
+            height: 125px;
+            margin: 10px;
           }
           </code></pre>
         <div class="outer">
-          <p>Спробуйте прокрутити цей кадр, щоб зрозуміти, як працює позиціонування sticky.</p>
-          <div class="sticky">
-            Цей <code>div</code> елемент має позиціювання: <code>sticky</code>;
-          </div>
-          <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur його оголошення. Eum no molestiae voluptatibus.
-
-            Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut
-            quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et.
-            Inciderint efficiantur його оголошення. Eum no molestiae voluptatibus.
-          </p>
-        </div>
-
-        <p><strong>Примітка.</strong> Internet Explorer не підтримує фіксоване позиціонування. Для Safari потрібен
-          префікс -webkit- (див. приклад нижче). Ви також повинні вказати принаймні один із top right bottom left, щоб
-          закріплене позиціонування працювало.
-      </article>
-
-      <!-- Absolute  Positioning -->
-      <article>
-        <h3>Позиція: Absolute </h3>
-        <p>
-          Елемент з <code>position: absolute;</code> позиціонується відносно першого батьківського елемента, який має
-          позицію, відмінну від статичної. Якщо такий елемент не знайдено, його буде розміщено на сторінці відносно
-          «верхнього лівого» кута вікна браузера. Зміщення коробки також можна вказати за допомогою однієї або кількох
-          властивостей top або bottom та/або left або right.</p>
-
-        <p>Приклад:</p>
-        <pre><code>
-          absolute {
-            position: absolute;
-            border: 3px solid greenyellow;
-            bottom: 50px;
-            right: 50px;
-            width: 150px;
-            height: 150px;
-          }
-          </code></pre>
-        <div class="outer">
-          <div class="absolute">
-            Цей <code>div</code> елемент має позиціювання: <code>absolute</code>;
-          </div>
-        </div>
-
-        <p><strong>Примітка.</strong> Абсолютно позиціоновані елементи повністю вилучаються з нормального потоку, тому
-          вони не займають місця під час розміщення однорідних елементів. Однак він може перекривати інші елементи
-          залежно від значення властивості z-index. Крім того, абсолютно позиціонований елемент може мати поля , і вони
-          не згортаються з іншими полями.
-      </article>
-
-
-
-      <!-- Fixed Positioning -->
-      <article>
-        <h3>Позиція: Fixed</h3>
-        <p>
-          Елемент з <code>position: fixed;</code> позиціонується відносно вікна перегляду, що означає, що він завжди
-          залишається в тому самому місці, навіть якщо сторінку прокручують. Властивості top, right, bottom і left
-          використовуються для позиціонування елемента.
-        </p>
-
-        <p>Приклад:</p>
-        <pre><code>
-          fixed {
-            position: fixed;
-            background-color: azure;
-            border: 3px dotted red;
-            bottom: 10px;
-            left: 10px;
-            width: 450px;
-            height: 20px;
-          }
-          </code></pre>
-        <div class="fixed">
-          Цей <code>div</code> елемент має позиціювання: <code>fixed</code>;
-        </div>
-
-        <p><strong>Примітка.</strong> Фіксований елемент не залишає розриву на сторінці, де він зазвичай розташовувався
-          б.
-      </article>
+          <ul>
+            <li class="thumbnail"><img src="images/float/club.jpg" alt="Club Card"></li>
+            <li class="thumbnail"><img src="images/float/diamond.jpg" alt="Diamond Card"></li>
+            <li class="thumbnail"><img src="images/float/spade.jpg" alt="Spade Card"></li>
+            <li class="thumbnail"><img src="images/float/heart.jpg" alt="Heart Card"></li>
+        </ul></div>
+      </article>      
     </section>
   </main>
 
