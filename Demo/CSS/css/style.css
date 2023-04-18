@@ -79,3 +79,13 @@ div.relative {
   width: 150px;
   height: 150px;
 }
+
+/*position: absolute*/
+div.absolute {
+  position: absolute;
+  border: 3px solid greenyellow;
+  bottom: 50px;
+  right: 50px;
+  width: 150px;
+  height: 150px;
+}
